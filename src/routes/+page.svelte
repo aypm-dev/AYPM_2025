@@ -10,16 +10,17 @@
 
     async function changePage(new_page: string){
         if (pages.hasOwnProperty(new_page)){
-            $page_name = new_page
             $page = (await import(pages[new_page as keyof typeof pages])).default
+            $page_name = new_page
         } else {
-            $page_name = "/"
             $page = (await import(pages["/"])).default
+            $page_name = "/"
         }
     }
 
     onMount(()=>{
         let hash = "/" + window.location.hash.replace("#", "")
+        $page_name = hash
         changePage(hash)
         
         window.addEventListener('hashchange', () => {
