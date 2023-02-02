@@ -10,7 +10,7 @@ module.exports = {
         }
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 5S linear infinite'
+        'infinite-scroll': 'infinite-scroll 10S linear infinite'
       },
       colors: {
         'eerie': {
