@@ -4,7 +4,6 @@
     import CloudManager from '$lib/components/CloudManager.svelte'
     import UserReview from '$lib/components/UserReview.svelte';
     import Input from '$lib/components/input.svelte'
-    let user_opinion: string = "Man, I love this Website!"
 
     let user_review: string = "Man, I love this Website!"
     let show_kiwi_text = false
@@ -144,28 +143,33 @@
             </div>
         </div>
 
-                </label>
-                <p class:hidden={user_opinion == "Man, I love this Website!"} class="mt-4 text-xl text-center"> 
-                    Hey, what are you writting? I hope its good... <i class="fa-solid fa-face-rolling-eyes"/>
+        <div class="grid grid-cols-2 grid-rows-2 mt-32 gap-4 gap-y-8">
+            <div>
+                <h1 class="text-center text-3xl"> HOW IT ALL STARTED? </h1>
+
+                <p class="mt-4 text-xl text-justify"> 
+                    It all started as a way to add more fields to my curriculum. You know, learning python using tutorials from Youtube and doing simple apps, but I deeply feel in love with programming after I learn how to recreate battles from one of my favorite games using the Lua programming languaje. <br> When you try to be a software developer always try to find a platform to put you skill into action, that help me a lot ;).
                 </p>
             </div>
+            <div/>
+            <div/>
+            <div>
+                <h1 class="text-center text-3xl"> WOW THIS TEXT SURE IS COOL </h1>
 
-            <div class="flex flex-col h-[54rem] w-1/3 gap-4 items-end animate-infinite-scroll">
-                {#each Array(6) as _}
-                    <div class="flex flex-nowrap flex-shrink-0 w-[22rem] h-32 p-4 gap-4 items-center rounded-xl border-[3px] border-b-[6px] text-eerie-900 border-eerie-900 shadow-lg bg-white">
-                        <i class="fa-solid fa-heart fa-2xl"/>
-                        <div class="flex flex-col items-start overflow-clip">
-                            <h1 class="text-3xl"> YOU: </h1>
-                            <p class="flex text-xl whitespace-nowrap items-center"> 
-                                <i class:hidden={user_opinion} class="fa-solid fa-face-angry mr-2"/> {user_opinion? user_opinion: "I hate empty strings"}
+                <p class="mt-4 text-xl text-center"> 
+                    Insert someting cool here
                 </p>
-                        </div>
-                    </div>
-                {/each}
             </div>
         </div>
     </div>
 
+    <div
+        class="absolute top-[102.5%] left-1/2 -translate-x-1/2"
+        on:keyup on:click={()=>show_kiwi_text=!show_kiwi_text}
+    >
+        <i class:animate-spin={show_kiwi_text} class="fa-solid fa-kiwi-bird fa-2xl fa-fw text-black hover:scale-150 hover:animate-none cursor-pointer transition-all"/>
+    </div>
+    <h1 class:opacity-0={!show_kiwi_text} class="absolute top-[105%] left-1/2 -translate-x-1/2 text-center text-3xl text-black transition-all select-none ease-in"> Oh, there he was! Thank you for finding him! </h1>
 
 </div>
 
