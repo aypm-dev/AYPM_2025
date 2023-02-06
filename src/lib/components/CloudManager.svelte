@@ -29,8 +29,8 @@
 
             setTimeout(() => {
                 removeCloud(id)
-            }, 20000);
-        }, 2300)
+            }, 30000);
+        }, 3000)
     })
 
     function removeCloud(id: cloud["id"]){

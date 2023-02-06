@@ -26,6 +26,6 @@
     transition:fade|local={{duration:750}}
     bind:this={cloud_element}
     style= "transform: translateX(-50%);"
-    class="cloud absolute fa-solid fa-cloud fa-2xl opacity-25 transition-all duration-[20000ms] ease-out"
+    class="cloud absolute fa-solid fa-cloud fa-2xl opacity-25 transition-all duration-[30000ms] ease-out"
 />
 
