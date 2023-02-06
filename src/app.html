@@ -8,7 +8,18 @@
 		<script src="https://kit.fontawesome.com/c55aa338ff.js" crossorigin="anonymous"></script>
 		%sveltekit.head%
 	</head>
-	<body style="font-family: 'Comfortaa', cursive; font-family: 'Inconsolata', monospace;" data-sveltekit-preload-data="hover">
+	<style>
+		::-moz-selection { /* Code for Firefox */
+			color: #f60052;
+			background: white;
+		}
+
+		::selection {
+			color: #f60052;
+			background: white;
+		}
+	</style>
+	<body style="font-family: 'Comfortaa', cursive; font-family: 'Inconsolata', monospace; select" data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
