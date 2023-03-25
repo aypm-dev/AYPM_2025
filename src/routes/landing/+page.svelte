@@ -18,9 +18,9 @@
     <CloudManager/>
 </div>
 
-<div class="relative flex flex-col w-full scale-90 sm:scale-100 items-center text-eerie-900">
+<div class="relative flex flex-col w-screen items-center text-eerie-900">
 
-    <div class="relative flex w-full sm:w-[40rem] mt-12 gap-2">
+    <div class="relative flex w-screen sm:w-[40rem] mt-12 gap-2">
         <div in:fly={{y:50, delay: 0, duration:500}} class="flex w-1/3 h-96 mt-[12rem] p-8 gap-4 justify-center items-end rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
             <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
             <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
@@ -46,40 +46,39 @@
             style="
                 top: 50%;
                 transform: translateY(-50%);
-                clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 100% 0, 100% 100%);
+                clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);
             "
             class="absolute flex top-0 h-44 w-full sm:w-[40rem] gap-2 justify-center items-center overflow-hidden"
         >
             <span 
                 in:fade={{delay: 900, duration: 500}} 
-                style="font-size:2.75rem; line-height: 1" 
-                class="group/aypm_letters flex w-full h-full gap-x-1 hover:gap-x-[0.125rem] justify-center items-center font-bold text-clip whitespace-nowrap overflow-hidden select-none transition-all ease-[0.68,-0.55,0.27,1.55] duration-300"
+                class="group/aypm_letters flex w-full h-full gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[2.75rem] hover:text-[2.99rem] font-bold text-clip whitespace-nowrap overflow-hidden select-none transition-all ease-[0.68,-0.55,0.27,1.55] duration-300"
             >
-                <span class="translate-x-[7px] translate-y-[50px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">A</span>
-                <span class="translate-x-[6px] translate-y-[65px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">N</span>
-                <span class="translate-x-[4px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
-                <span class="translate-x-[0px] translate-y-[60px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
-                <span class="translate-x-[3px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">L</span>
+                <span class="translate-x-[7px] translate-y-[50px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">A</span>
+                <span class="translate-x-[6px] translate-y-[65px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">N</span>
+                <span class="translate-x-[4px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
+                <span class="translate-x-[0px] translate-y-[60px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
+                <span class="translate-x-[3px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">L</span>
                 <span class="inline-block ">&nbsp</span>
-                <span class="translate-x-[8px] translate-y-[-5px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">Y</span>
-                <span class="translate-x-[4px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
-                <span class="translate-x-[15px] translate-y-[0px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">D</span>
-                <span class="translate-x-[2px] translate-y-[30px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
-                <span class="translate-x-[1px] translate-y-[15px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">R</span>
+                <span class="translate-x-[8px] translate-y-[-5px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">Y</span>
+                <span class="translate-x-[4px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
+                <span class="translate-x-[15px] translate-y-[0px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">D</span>
+                <span class="translate-x-[2px] translate-y-[30px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
+                <span class="translate-x-[1px] translate-y-[15px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">R</span>
                 <span class="inline-block ">&nbsp</span>
-                <span class="translate-x-[6px] translate-y-[-22px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">P</span>
-                <span class="translate-x-[0px] translate-y-[-6px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
-                <span class="translate-x-[-3px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">N</span>
-                <span class="translate-x-[-3px] translate-y-[-5px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">I</span>
-                <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
-                <span class="translate-x-[-4px] translate-y-[-25px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
-                <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">U</span>
-                <span class="translate-x-[-7px] translate-y-[-30px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
+                <span class="translate-x-[6px] translate-y-[-22px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">P</span>
+                <span class="translate-x-[0px] translate-y-[-6px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
+                <span class="translate-x-[-3px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">N</span>
+                <span class="translate-x-[-3px] translate-y-[-5px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">I</span>
+                <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
+                <span class="translate-x-[-4px] translate-y-[-25px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
+                <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">U</span>
+                <span class="translate-x-[-7px] translate-y-[-30px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
                 <span class="inline-block ">&nbsp</span>
-                <span class="translate-x-[-2px] translate-y-[-60px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">M</span>
-                <span class="translate-x-[-4px] translate-y-[-70px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">O</span>
-                <span class="translate-x-[-5px] translate-y-[-50px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300">R</span>
-                <span class="translate-x-[-7px] translate-y-[-65px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-all ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75 group-hover/aypm_letters:delay-500">A</span>
+                <span class="translate-x-[-2px] translate-y-[-60px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">M</span>
+                <span class="translate-x-[-4px] translate-y-[-70px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">O</span>
+                <span class="translate-x-[-5px] translate-y-[-50px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">R</span>
+                <span class="translate-x-[-7px] translate-y-[-65px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75 group-hover/aypm_letters:delay-[400ms]">A</span>
             </span>
         </div>
 

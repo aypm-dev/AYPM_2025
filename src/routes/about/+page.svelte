@@ -1,7 +1,12 @@
-<div class="relative flex flex-col w-full scale-90 sm:scale-100 items-center text-eerie-900">
+<script lang="ts">
+    import SkillsHover from '$lib/components/SkillsHover.svelte';
+	import { fly } from 'svelte/transition';
+</script>
+
+<div class="relative flex flex-col w-screen items-center text-eerie-900 overflow-x-clip">
 
     <div class="flex w-full mt-32">
-        <div class="flex flex-col h-fit w-full p-12 items-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
+        <div class="relative flex flex-col h-fit w-full p-12 items-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
             <h1 class="text-center text-6xl"> ABOUT </h1>
 
             <p class="mt-4 text-xl text-center"> 
@@ -9,26 +14,39 @@
                 a career in Web Developer, 
             </p>
 
-            <span class="w-[46rem] mt-32">
-                Hey! Hover down here <i class="fa-solid fa-turn-down mr-2"/>
-            </span>
-            <div class="flex p-4 px-20 w-fit gap-4 justify-evenly rounded-xl border-[3px] border-b-[6px] text-eerie-900 border-eerie-900 shadow-lg bg-white">
-                <div class="relative flex w-32 max-h-32 justify-center items-center">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="svelte-logo.png" loading="lazy" alt="Svelte Logo" class="animate-inverse-half-disappearing h-32">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="sveltekit-logo.png" loading="lazy" alt="Svelte Logo" class="animate-half-disappearing absolute">
-                </div>
-                <div class="flex w-32 h-32 justify-center items-center">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="react-logo.png"loading="lazy" alt="Svelte Logo">
-                </div>
-                <div class="flex w-32 h-32 justify-center items-center">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="css-logo.png" loading="lazy" alt="Svelte Logo" class="animate-inverse-half-disappearing absolute h-32">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="tailwind-logo.png" loading="lazy" alt="Svelte Logo" class="animate-half-disappearing h-32">
-                </div>
-                <div class="relative flex w-32 h-32 justify-center items-center">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="javascript-logo.png" loading="lazy" alt="Svelte Logo" class="rounded-xl">
-                    <img style="filter: drop-shadow(0 0.35rem 0.2px black)" src="typescript-logo.png" loading="lazy" alt="Svelte Logo" class="animate-half-disappearing absolute rounded-xl">
-                </div>
+            <div in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 300)}} class="absolute flex top-0 -translate-y-1/2 left-[10%] z-10 w-16 aspect-square p-2 rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly">
+                <img src="insomnia-logo.png"loading="lazy" alt="Insomnia Logo" title="Insomnia Logo" draggable="false" class="opacity-75 w-1/2 h-1/2">
             </div>
+            <div in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 500)}} class="absolute flex top-full -translate-y-1/2 left-[80%] z-10 w-20 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
+            <div in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 300)}} class="absolute flex top-full -translate-y-1/2 z-10 left-[calc(80%-1.25rem)] w-10 aspect-square justify-end items-top rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"> 
+                <img src="graphql-logo.png"loading="lazy" alt="GraphQL Logo" title="GraphQL Logo" draggable="false" class="opacity-75 w-3/5 h-3/5 m-1">
+            </div>
+            <div in:fly={{y:20, duration:500+(Math.random() * 500), delay:(Math.random() * 600)}} class="absolute flex top-[calc(100%+6rem)] -translate-y-1/2 left-0 -translate-x-1/2 sm:left-[5%] sm:translate-x-0  z-10 w-32 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
+        </div>
+    </div>
+
+    <SkillsHover/>
+
+    <div class="relative flex w-screen h-[116rem] my-32 p-12 mb-48 justify-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
+        <div class="container">
+            <h1 class="text-center text-6xl"> PROJECTS </h1>
+
+            <p class="mt-4 text-xl text-center"> 
+                We all love projects! You love them, I love them!<br><br>
+                These are the projects that I'm most proud of, 
+            </p>
+
+            <div class="absolute flex top-0 -translate-y-1/2 left-[80%] sm:left-[76%] z-10 w-12 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
+            <div class="absolute flex top-[5rem] -translate-y-1/2 left-[-5%] sm:left-[18%] z-10 w-20 aspect-square p-2 justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly">
+                <img src="git-logo.png"loading="lazy" alt="Git Logo" title="Git Logo" draggable="false" class="opacity-75 w-1/2 h-1/2">
+            </div>
+            <div class="absolute flex top-[calc(100%-4rem)] -translate-y-1/2 left-[21%] z-10 w-20 aspect-square justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"> 
+                <i class="fa-solid fa-kiwi-bird fa-2xl fa-fw text-white opacity-75 -rotate-45"/>
+            </div>
+            <div class="absolute flex top-full -translate-y-1/2 left-[10%] z-10 w-12 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/> 
+            <div class="absolute flex top-full -translate-y-1/2 left-[80%] z-10 w-48 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
+            <div class="absolute flex top-full -translate-y-1/2 left-[66%] z-10 w-32 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
         </div>
     </div>
 </div>
+

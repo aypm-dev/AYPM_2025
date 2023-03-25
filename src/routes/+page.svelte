@@ -12,6 +12,7 @@
         if (pages.hasOwnProperty(new_page)){
             $page = (await import(pages[new_page as keyof typeof pages])).default
             $page_name = new_page
+            window.scrollTo(0, 0)
         } else {
             $page = (await import(pages["/"])).default
             $page_name = "/"

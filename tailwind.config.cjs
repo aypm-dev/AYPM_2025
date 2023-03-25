@@ -6,7 +6,7 @@ module.exports = {
       keyframes: {
         "infinite-scroll": {
           'from': { transform: "translateY(0%)" },
-          'to': { transform: 'translateY(-50%)' },
+          'to': { transform: "translateY(-50%)" },
         },
         "half-disappearing": {
           '0%': { opacity: "0%" },
@@ -21,12 +21,20 @@ module.exports = {
           '50%': { opacity: "0%" },
           '87.5%': { opacity: "100%" },
           '100%': { opacity: "100%" },
+        },
+        "jump-and-bounce": {
+          '1.5%': { transform: "translateY(-50%) scale(0.8, 1.2)" },
+          '20%': { transform: "translateY(0%) scale(1.2, 0.8)" },
+          '40%': { transform: "translateY(-12.5%) scale(0.95, 1.05)" },
+          '60%': { transform: "translateY(0%) scale(1.05, 0.95)" },
+          '70%': { transform: "scale(1, 1)" },
         }
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 10S linear infinite',
         'half-disappearing': 'half-disappearing 15S linear infinite forwards',
-        'inverse-half-disappearing': 'inverse-half-disappearing 15S linear infinite forwards'
+        'inverse-half-disappearing': 'inverse-half-disappearing 15S linear infinite forwards',
+        'jump-and-bounce': 'jump-and-bounce 0.75S ease-in-out forwards'
       },
       colors: {
         'eerie': {
