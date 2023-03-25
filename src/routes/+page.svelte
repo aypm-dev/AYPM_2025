@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-    import { page, page_name } from "$lib/stores/page.svelte"
+    import { page, page_name } from "$lib/stores/page"
 
     const pages = {
         "/": "landing",

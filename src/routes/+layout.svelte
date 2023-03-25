@@ -2,7 +2,7 @@
 	
 	import "../app.css";
 	import Header from '$lib/components/Header.svelte';
-    import { page_name } from "$lib/stores/page.svelte"
+    import { page_name } from "$lib/stores/page"
 	import { onMount } from "svelte";
 
 	let show_nav = true
