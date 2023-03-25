@@ -3,18 +3,18 @@
     import { page, page_name } from "$lib/stores/page.svelte"
 
     const pages = {
-        "/": "./landing/+page.svelte",
-        "/about": "./about/+page.svelte",
-        "/contact": "./contact/+page.svelte",
+        "/": "landing",
+        "/about": "about",
+        "/contact": "contact",
     }
 
-    async function changePage(new_page: string){
+    async function changePage(new_page: keyof typeof pages){
         if (pages.hasOwnProperty(new_page)){
-            $page = (await import(pages[new_page as keyof typeof pages])).default
+            $page = (await import(`./${pages[new_page]}/+page.svelte`)).default
             $page_name = new_page
             window.scrollTo(0, 0)
         } else {
-            $page = (await import(pages["/"])).default
+            $page = (await import(`./${pages["/"]}/+page.svelte`)).default
             $page_name = "/"
         }
     }

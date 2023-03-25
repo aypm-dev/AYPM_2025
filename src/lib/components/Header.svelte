@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page_name } from "$lib/stores/page.svelte"
+    import { page_name } from "$lib/stores/page"
 	import { fade, fly } from 'svelte/transition';
 </script>
 
@@ -19,7 +19,7 @@
         </div>
 
         <div class="flex w-2/5 sm:w-1/3 gap-x-4 justify-center font-bold">
-            <a href="#" class:opacity-75={$page_name==""} class="group flex"> <span class="group-hover:animate-jump-and-bounce">Home</span> </a>
+            <a href={"#"} class:opacity-75={$page_name==""} class="group flex"> <span class="group-hover:animate-jump-and-bounce">Home</span> </a>
             <a href="#about" class="group flex"> <span class="group-hover:animate-jump-and-bounce">About</span> </a>
             <a href="#contact" class="group flex"> <span class="group-hover:animate-jump-and-bounce">Contact</span> </a>
         </div>
