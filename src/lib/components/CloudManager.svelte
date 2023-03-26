@@ -12,33 +12,46 @@
     }
 
     onMount(()=>{
+        for (let i = 0; i < 4; i++) {
+            addCloud()
+        }
         setInterval(()=>{
-            const id =  crypto.randomUUID()
-            const scale = Math.random() * (6 - 2) + 1
-            const random_x = Math.random() * (45 - 5) + 5
-            const position  = [
-                random_x > 30? random_x + 40: random_x,
-                Math.random() * (50 - 5) + 5
-            ]
-
-            clouds = [...clouds, {
-                id,
-                position,
-                scale
-            }]
-
-            setTimeout(() => {
-                removeCloud(id)
-            }, 30000);
-        }, 3000)
+            addCloud()
+        }, 2000)
     })
 
-    function removeCloud(id: cloud["id"]){
-        clouds = clouds.filter(cloud => cloud.id != id)
+    function getRandomNumberInRange(ranges: ([number, number])[]){
+        let random_range_index = ranges.length * Math.random() | 0
+
+        let min = ranges[random_range_index][0]
+        var max = ranges[random_range_index][1]
+
+        return Math.random() * (max - min + 1) + min
     }
+    
+    function addCloud(){
+        const id =  crypto.randomUUID()
+        const scale = Math.random() * (6 - 2) + 1
+        const random_x = getRandomNumberInRange([[12,28], [72, 88]])
+        const position  = [
+            random_x,
+            getRandomNumberInRange([[10, 70]])
+        ]
+
+        clouds = [...clouds, {
+            id,
+            position,
+            scale
+        }]
+
+        setTimeout(() => {
+            clouds = clouds.filter(cloud => cloud.id != id)
+        }, 20000);
+    }
+
 </script>
 
-<div bind:this={cloud_container} class="relative w-screen h-[60rem] overflow-x-hidden">
+<div bind:this={cloud_container} class="flex relative w-screen h-[60rem] overflow-x-hidden">
     {#each clouds as cloud (cloud.id)}
         <Cloud position={cloud.position} scale={cloud.scale}/>
     {/each}
