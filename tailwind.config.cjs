@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      transitionProperty: {
+        'height': 'height'
+      },
       keyframes: {
         "infinite-scroll": {
           'from': { transform: "translateY(0%)" },
@@ -28,13 +31,19 @@ module.exports = {
           '40%': { transform: "translateY(-12.5%) scale(0.95, 1.05)" },
           '60%': { transform: "translateY(0%) scale(1.05, 0.95)" },
           '70%': { transform: "scale(1, 1)" },
+        },
+        "spin-forwards": {
+          "to": {
+              transform: "rotate(360deg);"
+          }
         }
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 10S linear infinite',
         'half-disappearing': 'half-disappearing 15S linear infinite forwards',
         'inverse-half-disappearing': 'inverse-half-disappearing 15S linear infinite forwards',
-        'jump-and-bounce': 'jump-and-bounce 0.75S ease-in-out forwards'
+        'jump-and-bounce': 'jump-and-bounce 0.75S ease-in-out forwards',
+        'spin-forwards': "spin-forwards 1s linear infinite forwards"
       },
       colors: {
         'eerie': {

@@ -18,21 +18,24 @@
     <CloudManager/>
 </div>
 
-<div class="relative flex flex-col w-screen items-center text-eerie-900">
+<div class="flex flex-col w-screen items-center px-2 text-eerie-900">
 
-    <div class="relative flex w-screen sm:w-[40rem] mt-12 gap-2">
-        <div in:fly={{y:50, delay: 0, duration:500}} class="flex w-1/3 h-96 mt-[12rem] p-8 gap-4 justify-center items-end rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
-            <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
-            <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
-            <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
+    <div class="relative flex w-full sm:w-[40rem] mt-12 gap-2">
+        <div in:fly={{y:50, delay: 0, duration:500}} class="flex flex-col w-1/3 h-96 mt-[12rem] p-1 sm:p-2 justify-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
+            <i in:fade={{delay: 1500, duration: 500}} class="-mt-6 fa-solid fa-kiwi-bird fa-2xl"></i>
+            <div class="flex w-full p-1 mt-auto gap-2 sm:p-4 sm:gap-6">
+                <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
+                <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
+                <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
+            </div>
         </div>
 
         <div in:fly={{y:50, delay: 200, duration:500}} class="flex flex-col w-1/3 h-96 mt-[6rem] p-2 gap-4 justify-end items-start text-5xl rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white select-none">
             ...
         </div>
 
-        <div in:fly={{y:50, delay: 400, duration:500}} class="flex flex-col w-1/3 h-96 mt-[0rem] p-2 rounded-xl rounded-tr-[48px] border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
-            <div class="flex w-full p-6 gap-4">
+        <div in:fly={{y:50, delay: 400, duration:500}} class="flex flex-col w-1/3 h-96 mt-[0rem] pt-4 p-1 sm:pt-2 sm:p2 rounded-xl rounded-tr-[48px] border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
+            <div class="flex w-full p-1 gap-2 sm:p-4 sm:gap-6">
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900"/>
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900"/>
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900"/>
@@ -42,30 +45,24 @@
             </span>
         </div>
 
-        <div 
-            style="
-                top: 50%;
-                transform: translateY(-50%);
-                clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);
-            "
-            class="absolute flex top-0 h-44 w-full sm:w-[40rem] gap-2 justify-center items-center overflow-hidden"
+        <div
+            style="clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);"
+            class="absolute flex left-0 top-1/2 -translate-y-1/2 h-44 w-full"
         >
             <span 
                 in:fade={{delay: 900, duration: 500}} 
-                class="group/aypm_letters flex w-full h-full gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[2.75rem] hover:text-[2.99rem] font-bold text-clip whitespace-nowrap overflow-hidden select-none transition-all ease-[0.68,-0.55,0.27,1.55] duration-300"
+                class="group/aypm_letters flex w-full h-full sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[2rem] hover:text-[1.5rem] sm:text-[2.75rem] sm:hover:text-[2.99rem] font-bold text-clip whitespace-nowrap overflow-hidden select-none transition-all ease-[0.68,-0.55,0.27,1.55] duration-300"
             >
-                <span class="translate-x-[7px] translate-y-[50px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">A</span>
-                <span class="translate-x-[6px] translate-y-[65px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">N</span>
+                <span class="translate-x-[10px] translate-y-[50px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">A</span>
+                <span class="translate-x-[9px] translate-y-[65px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">N</span>
                 <span class="translate-x-[4px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
                 <span class="translate-x-[0px] translate-y-[60px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
-                <span class="translate-x-[3px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">L</span>
-                <span class="inline-block ">&nbsp</span>
+                <span class="translate-x-[3px] translate-y-[40px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">L</span> &nbsp
                 <span class="translate-x-[8px] translate-y-[-5px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">Y</span>
                 <span class="translate-x-[4px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
                 <span class="translate-x-[15px] translate-y-[0px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">D</span>
                 <span class="translate-x-[2px] translate-y-[30px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">E</span>
-                <span class="translate-x-[1px] translate-y-[15px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">R</span>
-                <span class="inline-block ">&nbsp</span>
+                <span class="translate-x-[1px] translate-y-[15px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">R</span> &nbsp
                 <span class="translate-x-[6px] translate-y-[-22px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-100">P</span>
                 <span class="translate-x-[0px] translate-y-[-6px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
                 <span class="translate-x-[-3px] translate-y-[12px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">N</span>
@@ -73,36 +70,29 @@
                 <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
                 <span class="translate-x-[-4px] translate-y-[-25px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">G</span>
                 <span class="translate-x-[-5px] translate-y-[-10px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">U</span>
-                <span class="translate-x-[-7px] translate-y-[-30px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span>
-                <span class="inline-block ">&nbsp</span>
-                <span class="translate-x-[-2px] translate-y-[-60px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">M</span>
-                <span class="translate-x-[-4px] translate-y-[-70px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">O</span>
-                <span class="translate-x-[-5px] translate-y-[-50px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">R</span>
-                <span class="translate-x-[-7px] translate-y-[-65px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75 group-hover/aypm_letters:delay-[400ms]">A</span>
+                <span class="translate-x-[-7px] translate-y-[-30px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">A</span> &nbsp
+                <span class="translate-x-[-8px] translate-y-[-60px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75">M</span>
+                <span class="translate-x-[-6px] translate-y-[-70px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">O</span>
+                <span class="translate-x-[-8px] translate-y-[-50px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300">R</span>
+                <span class="translate-x-[-10px] translate-y-[-65px] inline-block group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] duration-300 delay-75 group-hover/aypm_letters:delay-[400ms]">A</span>
             </span>
         </div>
 
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-[10.8rem] my-auto w-8 h-8 gap-2 bg-slate-300 bg-opacity-10">
-            <i class="fa-solid fa-kiwi-bird fa-2xl"></i>
-        </div>
-
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-[36rem] left-[92.5%] my-auto w-8 h-8 gap-2 bg-slate-300 bg-opacity-10">
+        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-[32rem] sm:top-[36rem] left-[82.5%] sm:left-[92.5%] h-8 bg-opacity-100">
             <i class="fa-solid fa-fish fa-2xl animate-[spin_1.75s_linear_infinite]"></i>
         </div>
-
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-96 left-[calc(66.66667%+0.25rem)] w-64 h-20 my-auto mt-4 gap-2 items-center">
-            <div class="w-8 h-20 p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
-            <div class="w-24 h-[4.25rem] p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
-        </div>
         
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-96 left-[calc(66.66667%+9.25rem)] w-64 h-20 my-auto mt-4 gap-2 items-start">
+        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-96 left-[calc(66.66667%+0.25rem)] mt-4 gap-2">
+            <div class="w-8 h-20 p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
+            <div class="w-8 sm:w-24 h-16 p-2 gap-4 mt-2 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
             <div class="w-8 h-[24rem] mt-2 p-2 gap-4 items-center rounded-xl rounded-tr-[128px] border-[3px] border-b-[6px] border-eerie-900 ring-4 ring-white bg-folly"/>
         </div>
+
     </div>
 
     <div in:fade={{delay: 1500, duration: 500}} class="flex w-full sm:w-[40rem] mt-4 gap-2">
-        <div class="flex flex-col w-[calc(33.3333333%-0.25rem)] h-20 ml-auto mr-[16.6666667%] p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
-            <h1 class="font-bold text-center"> 
+        <div class="flex flex-col w-fit h-20 ml-auto mr-[16.6666667%] p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
+            <h1 class="font-bold text-center whitespace-nowrap"> 
                 Frontend Developer <br>   
                 Software Developer     
             </h1> 
@@ -110,7 +100,7 @@
     </div>
 </div>
 
-<div class="relative flex w-screen h-[116rem] my-32 p-12 mb-48 justify-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
+<div class="relative flex w-screen h-hit my-32 p-12 justify-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
     <div class="container">
         <h1 class="text-center text-3xl"> HOW'S ANGEL? </h1>
 
@@ -152,17 +142,15 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 grid-rows-2 mt-32 gap-4 gap-y-8">
-            <div>
+        <div class="flex flex-col mt-32 gap-4 gap-y-32">
+            <div class="w-1/2">
                 <h1 class="text-center text-3xl"> HOW IT ALL STARTED? </h1>
 
                 <p class="mt-4 text-xl text-justify"> 
                     It all started as a way to add more fields to my curriculum. You know, learning python using tutorials from Youtube and doing simple apps, but I deeply feel in love with programming after I learn how to recreate battles from one of my favorite games using the Lua programming languaje. <br> When you try to be a software developer always try to find a platform to put you skill into action, that help me a lot ;).
                 </p>
             </div>
-            <div/>
-            <div/>
-            <div>
+            <div class="w-1/2 ml-auto">
                 <h1 class="text-center text-3xl"> WOW THIS TEXT SURE IS COOL </h1>
 
                 <p class="mt-4 text-xl text-center"> 
@@ -171,14 +159,12 @@
             </div>
         </div>
     </div>
-
-    <div
-        class="absolute top-[102.5%] left-1/2 -translate-x-1/2"
-        on:keyup on:click={()=>show_kiwi_text=!show_kiwi_text}
-    >
-        <i class:animate-spin={show_kiwi_text} class="fa-solid fa-kiwi-bird fa-2xl fa-fw text-black hover:scale-150 hover:animate-none cursor-pointer transition-all"/>
-    </div>
-    <h1 class:opacity-0={!show_kiwi_text} class="absolute top-[105%] left-1/2 -translate-x-1/2 text-center text-3xl text-black transition-all select-none ease-in"> Oh, there he was! Thank you for finding him! </h1>
-
 </div>
 
+<div
+    class="flex flex-col items-center gap-y-8 mb-32"
+    on:keyup on:click={()=>show_kiwi_text=!show_kiwi_text}
+>
+    <i class:animate-spin-forwards={show_kiwi_text} class:hover:animate-none={!show_kiwi_text}  class="fa-solid fa-kiwi-bird fa-2xl fa-fw text-black cursor-pointer transition-all"/>
+    <h1 class:opacity-0={!show_kiwi_text} class="text-center text-3xl text-black transition-all select-none ease-in"> Oh, there he was! Thank you for finding him! </h1>
+</div>
