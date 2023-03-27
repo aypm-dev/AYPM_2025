@@ -21,7 +21,7 @@
 <div class="flex flex-col w-screen items-center px-2 text-eerie-900">
 
     <div class="relative flex w-full sm:w-[40rem] mt-12 gap-2">
-        <div in:fly={{y:50, delay: 0, duration:500}} class="flex flex-col w-1/3 h-96 mt-[12rem] p-1 sm:p-2 justify-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
+        <div in:fly={{y:50, delay: 0, duration:500}} class="flex flex-col w-1/3 h-80 sm:h-96 mt-[12rem] p-1 sm:p-2 justify-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
             <i in:fade={{delay: 1500, duration: 500}} class="-mt-6 fa-solid fa-kiwi-bird fa-2xl"></i>
             <div class="flex w-full p-1 mt-auto gap-2 sm:p-4 sm:gap-6">
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
@@ -30,11 +30,11 @@
             </div>
         </div>
 
-        <div in:fly={{y:50, delay: 200, duration:500}} class="flex flex-col w-1/3 h-96 mt-[6rem] p-2 gap-4 justify-end items-start text-5xl rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white select-none">
+        <div in:fly={{y:50, delay: 200, duration:500}} class="flex flex-col w-1/3 h-80 sm:h-96 mt-[6rem] p-2 gap-4 justify-end items-start text-5xl rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white select-none">
             ...
         </div>
 
-        <div in:fly={{y:50, delay: 400, duration:500}} class="flex flex-col w-1/3 h-96 mt-[0rem] pt-4 p-1 sm:pt-2 sm:p2 rounded-xl rounded-tr-[48px] border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
+        <div in:fly={{y:50, delay: 400, duration:500}} class="flex flex-col w-1/3 h-80 sm:h-96 mt-[0rem] pt-4 p-1 sm:pt-2 sm:p2 rounded-xl rounded-tr-[48px] border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white">
             <div class="flex w-full p-1 gap-2 sm:p-4 sm:gap-6">
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900"/>
                 <div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900"/>
@@ -78,11 +78,11 @@
             </span>
         </div>
 
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-[32rem] sm:top-[36rem] left-[82.5%] sm:left-[92.5%] h-8 bg-opacity-100">
+        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-[28rem] sm:top-[36rem] left-[82.5%] sm:left-[92.5%] h-8 bg-opacity-100">
             <i class="fa-solid fa-fish fa-2xl animate-[spin_1.75s_linear_infinite]"></i>
         </div>
         
-        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-96 left-[calc(66.66667%+0.25rem)] mt-4 gap-2">
+        <div in:fade={{delay: 1500, duration: 500}} class="absolute flex top-80 sm:top-96 left-[calc(66.66667%+0.25rem)] mt-4 gap-2">
             <div class="w-8 h-20 p-2 gap-4 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
             <div class="w-8 sm:w-24 h-16 p-2 gap-4 mt-2 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"/>
             <div class="w-8 h-[24rem] mt-2 p-2 gap-4 items-center rounded-xl rounded-tr-[128px] border-[3px] border-b-[6px] border-eerie-900 ring-4 ring-white bg-folly"/>
@@ -100,7 +100,7 @@
     </div>
 </div>
 
-<div class="relative flex w-screen h-hit my-32 p-12 justify-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
+<div class="relative flex w-screen h-hit my-32 p-8 justify-center text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly">
     <div class="container">
         <h1 class="text-center text-3xl"> HOW'S ANGEL? </h1>
 
@@ -113,17 +113,17 @@
             What? you don't belive me? Just look at your own review for my beautiful website down bellow!
         </p>
 
-        <div class="relative flex w-full h-[27rem] mt-32 gap-8 overflow-clip border-3 border-eerie-900">
-            <div class="absolute top-0 w-full h-1/6 z-10 bg-gradient-to-b from-folly to-transparent"/>
-            <div class="absolute top-[83.34%] w-full h-1/6 z-10 bg-gradient-to-t from-folly to-transparent"/>
+        <div class="relative flex w-full h-fit sm:h-[27rem] mt-24 mb-8 sm:mt-32 gap-8 sm:overflow-clip border-3 border-eerie-900">
+            <div class="hidden sm:flex absolute top-0 w-full h-1/6 z-10 bg-gradient-to-b from-folly to-transparent"/>
+            <div class="hidden sm:flex absolute top-[83.34%] w-full h-1/6 z-10 bg-gradient-to-t from-folly to-transparent"/>
             
-            <ul class="flex flex-col h-[54rem] w-1/4 gap-4 items-start animate-infinite-scroll select-none">
+            <ul class="hidden sm:flex flex-col h-[54rem] w-1/4 gap-4 items-start animate-infinite-scroll select-none">
                 {#each {length: 6} as _, index}
                     <UserReview emote={index % 2 == 0? "fa-star": "fa-heart"} user_name="You" text={user_review}/>
                 {/each}
             </ul>
 
-            <div class="flex flex-col w-2/4 justify-center">
+            <div class="flex flex-col w-full sm:w-2/4 justify-center">
                 <Input bind:value={user_review} label="Your review:" name="review_input" autocomplete={false}/>
                 <p style="font-size: 0.50rem;" class="mt-1 text-sm text-right select-none opacity-75"> 
                     For legal reasons, this may not be a real review. My mom doesnt like lies :(                
@@ -135,22 +135,33 @@
                 {/key}
             </div>
 
-            <div class="flex flex-col h-[54rem] w-1/4 gap-4 items-end animate-infinite-scroll select-none">
+            <div class="hidden sm:flex flex-col h-[54rem] w-1/4 gap-4 items-end animate-infinite-scroll select-none">
                 {#each {length: 6} as _, index}
                     <UserReview emote={index % 2 == 0? "fa-star": "fa-heart"} user_name="You" text={user_review}/>
                 {/each}
             </div>
         </div>
 
+        <div class="flex sm:hidden relative h-32 overflow-clip">
+            <div class="absolute top-0 w-1/6 h-full z-10 bg-gradient-to-r from-folly to-transparent"/>
+            <div class="absolute left-full -translate-x-[calc(100%-2px)] w-1/6 h-full z-10 bg-gradient-to-l from-folly to-transparent"/>
+            
+            <ul class="flex h-[54rem] w-[34rem] gap-4 items-start animate-infinite-scroll-horizontal select-none">
+                {#each {length: 44} as _, index}
+                    <UserReview emote={index % 2 == 0? "fa-star": "fa-heart"} user_name="You" text={user_review}/>
+                {/each}
+            </ul>
+        </div>
+
         <div class="flex flex-col mt-32 gap-4 gap-y-32">
-            <div class="w-1/2">
+            <div class="w-2/3 sm:w-1/2">
                 <h1 class="text-center text-3xl"> HOW IT ALL STARTED? </h1>
 
                 <p class="mt-4 text-xl text-justify"> 
                     It all started as a way to add more fields to my curriculum. You know, learning python using tutorials from Youtube and doing simple apps, but I deeply feel in love with programming after I learn how to recreate battles from one of my favorite games using the Lua programming languaje. <br> When you try to be a software developer always try to find a platform to put you skill into action, that help me a lot ;).
                 </p>
             </div>
-            <div class="w-1/2 ml-auto">
+            <div class="w-2/3 sm:w-1/2 ml-auto">
                 <h1 class="text-center text-3xl"> WOW THIS TEXT SURE IS COOL </h1>
 
                 <p class="mt-4 text-xl text-center"> 

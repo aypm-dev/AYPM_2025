@@ -11,6 +11,10 @@ module.exports = {
           'from': { transform: "translateY(0%)" },
           'to': { transform: "translateY(-50%)" },
         },
+        "infinite-scroll-horizontal": {
+          'from': { transform: "translateX(0%)" },
+          'to': { transform: "translateX(-100%)" },
+        },
         "half-disappearing": {
           '0%': { opacity: "0%" },
           '12.5%': { opacity: "100%" },
@@ -41,6 +45,7 @@ module.exports = {
       animation: {
         'infinite-scroll': 'infinite-scroll 10S linear infinite',
         'half-disappearing': 'half-disappearing 15S linear infinite forwards',
+        'infinite-scroll-horizontal': 'infinite-scroll-horizontal 10S linear infinite forwards',
         'inverse-half-disappearing': 'inverse-half-disappearing 15S linear infinite forwards',
         'jump-and-bounce': 'jump-and-bounce 0.75S ease-in-out forwards',
         'spin-forwards': "spin-forwards 1s linear infinite forwards"

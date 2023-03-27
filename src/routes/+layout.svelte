@@ -1,5 +1,4 @@
 <script lang="ts">
-	
 	import "../app.css";
 	import Header from '$lib/components/Header.svelte';
     import { page_name } from "$lib/stores/page"
@@ -20,7 +19,6 @@
 			document.removeEventListener("scroll", scrollHandler, false)
 		}
 	}
-
 </script> 
 
 {#if show_nav}
