@@ -1,5 +1,6 @@
 <script lang="ts">
     import SkillsHover from './SkillsHover.svelte';
+    import About from './About.svelte'
 </script>
 
 <div class="relative flex flex-col w-screen items-center text-eerie-900 overflow-x-clip">
