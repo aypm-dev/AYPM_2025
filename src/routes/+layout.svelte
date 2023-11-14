@@ -4,6 +4,7 @@
 	import Footer from '$lib/components/Footer.svelte';
     import { page_name } from "$lib/stores/page"
 	import { onMount } from "svelte";
+	import { browser } from '$app/environment'
 
 	let show_nav = true
 
@@ -20,6 +21,10 @@
 			document.removeEventListener("scroll", scrollHandler, false)
 		}
 	}
+
+	if (browser) {
+		document.body.classList.add('no-scroll-bar')
+	} 
 </script> 
 
 {#if show_nav}
