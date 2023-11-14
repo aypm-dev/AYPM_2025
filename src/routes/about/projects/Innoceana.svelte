@@ -1,0 +1,81 @@
+<script>
+    import innoceana from "$lib/images/innoceana.png"
+	import { fly } from "svelte/transition";
+
+    let show_turtle = false
+</script>
+
+
+<div style="grid-template-columns: 1fr 2fr" class="grid w-full gap-4">
+    <div class="flex flex-col w-full h-full mt-12 items-end">
+        {#each {length: 12} as index} 
+            <h1 class="-mt-[39.5px] sm:-mt-10 text-6xl sm:text-7xl whitespace-nowrap"> ORG? </h1>
+        {/each}
+    </div>
+
+    <div class="flex flex-col items-center">
+        <span class="mt-4 text-2xl font-bold"> INNOCEANA RESERVATION? </span>
+
+        <p class="mt-4 text-xl text-justify"> 
+            In May 2022, I started my internship for high school with Lionix, a small web development company for business. <br><br>
+        </p>
+        <p class="hidden sm:block text-xl text-justify">
+            My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
+            
+            Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quicly got in contact. <br> <br> 
+        </p>
+    </div>
+</div>
+
+<p class="mt-4 sm:hidden text-xl text-justify">
+    My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
+    
+    Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quicly got in contact. <br> <br> 
+</p>
+
+<p class="sm:w-2/3 mt-4 mx-auto text-xl text-justify"> 
+    And by the nature of the app they put me in charge! A web page to save Innoceana time managing reservations for their various activities like snorkeling, whale monitoring, scuba diving,a and internship applying. The single page app had support for multiple languages, had online contracts that automatically generated PDFs for printing, and google AUTH integration.
+</p>
+
+<div class="mt-12 relative w-fit mx-auto">
+    <div class="flex w-fit h-fit flex-col items-center">
+        <img class="rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg" width=256 src={innoceana} alt="innoceana page"/>
+    </div>
+    
+    <div class="absolute w-fit top-full sm:top-2/3 left-1/2 sm:left-full -translate-x-1/2 -translate-y-2/3">
+        <div class="flex w-full min-h-[2.1rem] text-3xl text-end select-none justify-end">
+            {#if show_turtle}
+                <div in:fly={{y:-50, duration:100}} out:fly|local={{y:50, duration:500}} class="flex">
+                    <svg class="w-8 h-8" enable-background="new 0 0 128 128" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m112.7 59.21s3.94-2.21 4.93-2.77 4.6-2.82 5.91-0.84c0.77 1.16-0.7 4.44-3.05 7.86-2.14 3.13-7.12 9.56-7.4 10.83s1.11 6.36 1.53 8.33 1.74 6.71 1.17 8.54-3.43 6.85-10.75 6.76c-5.82-0.07-7.51-1.78-7.7-2.82-0.14-0.75-0.56-3.24-0.56-3.24s-4.79 2.96-7.04 4.08-8.31 4.22-8.31 4.22 1.17 5.35 1.36 7.51 0.86 5.25-0.28 7.32c-1.03 1.88-4.25 5.02-11.83 4.97-5.92-0.04-7.41-1.88-8.35-3-0.94-1.13-1.13-6.48-1.13-7.6s-0.19-5.07-0.19-5.07-8.02-0.4-12.86-0.75c-4.38-0.32-10.16-0.99-10.16-0.99s0.21 2.33 0.42 4.01c0.19 1.5 0.23 4.64-1.34 6.17-2.11 2.06-7.56 2.21-10.56 1.92-3-0.28-7.18-1.83-8.4-4.55s0.38-6.29 1.03-8.35c0.58-1.81 1.6-4.41 1.22-5.16s-4.04-1.69-9.29-6.95c-5.26-5.26-12.13-23.52 3.28-36.23 15.49-12.76 43.81 1.1 45.31 2.04 1.54 0.96 53.04 3.76 53.04 3.76z" fill="#BDCF47"/>
+                        <path d="m66.25 25.28c-13.93 0.62-24.38 7.52-29.57 15.06-3.1 4.5-4.65 7.74-4.65 7.74s4.81 0.14 9.15 2.46c5 2.67 10.8 5.56 14.61 18.13 2.87 9.5 3.98 18.53 11.44 20.52 8.45 2.25 28.16 1.13 37.59-8.02s11.26-16.05 8.87-25.06-13.17-25.05-28.16-29.28c-6.47-1.83-12.95-1.83-19.28-1.55z" fill="#6E823A"/>
+                        <path d="m111.93 51.32c-0.42-0.99-1.3-2.5-1.3-2.5s-0.07 2.05-0.25 3.13c-0.28 1.76-1.25 5.42-1.81 4.88-1-0.97-5.73-6.92-7.98-10.23-1.71-2.52-7.6-9.11-7.74-11.26-0.07-1.06 1.27-4.65 1.27-4.65s-1.22-0.7-2.35-1.34c-0.88-0.49-2.16-1.03-2.16-1.03s-0.77 4.9-1.62 5.82c-0.75 0.81-5.32 2.6-8.87 3.94-4.29 1.62-8.45 3.73-10 4.01-1.36 0.25-9.09-1.41-12-1.97-3.66-0.7-9.18-2.26-10.45-3.17-1.48-1.06-3.07-3.78-3.07-3.78s-0.89 0.61-1.78 1.31c-0.88 0.69-2.02 2.06-2.02 2.06s2.31 2.32 2.44 3.18c0.18 1.2-1.27 2.83-2.46 4.38-0.72 0.93-2.75 4.85-2.75 4.85s0.97 0.09 2.15 0.63c1.23 0.57 2.38 1.16 2.38 1.16s2.97-6.9 4.9-7.53c1.65-0.54 6.3 0.99 9.68 1.69 4.79 0.99 9.64 1.87 10.66 3.17 1.06 1.34 2.06 6.68 3.03 11.19 1.06 4.94 3.81 17.76 3.17 18.74-0.63 0.99-5.7 0.63-8.59 0.28-2.45-0.3-6.41-1.76-6.41-1.76s0.58 2.11 0.77 2.67c0.28 0.81 1.16 3.06 1.16 3.06s5.67 2.5 22.42 0.95 25.03-12.96 27.38-18.02c3.14-6.78 3.54-10.39 3.54-10.39s-0.92-2.48-1.34-3.47zm-15.28 21.89c-4.24 2.67-15.2 5.49-17.18 4.43-1.58-0.85-3.94-13.94-5.07-19.78-0.72-3.74-2.45-9.42-1.41-11.19 0.7-1.2 4.79-2.99 7.81-4.4 2.87-1.33 6.97-3.13 8.17-2.99 1.7 0.2 5.35 6.12 9.01 11.19s7.67 10.35 7.74 12.18c0.09 1.84-4.7 7.82-9.07 10.56z" fill="#484E23"/>
+                        <path d="m41.18 65.86c0.5 2.83-0.95 5.75-4.07 6.02-2.56 0.22-4.59-1.57-5.09-4.4s1.14-5.49 3.68-5.94c2.52-0.45 4.98 1.48 5.48 4.32z" fill="#2A2B28"/>
+                        <path d="m22.82 66.11c0.07 2.84-2.42 5.69-5.5 5.11-2.53-0.48-3.99-2.73-3.71-5.55 0.29-2.82 2.59-4.9 5.15-4.65s3.99 2.13 4.06 5.09z" fill="#2A2B28"/>
+                        <path d="m30.77 76.59c1.16-0.79 3.1-2.67 4.36-1.06 1.27 1.62-0.92 3.1-2.18 4.01-1.27 0.92-4.08 3.17-6.12 3.17-1.9 0-4.79-2.32-6.62-3.87-1.49-1.26-2.18-2.89-1.34-3.87s2.14-0.62 3.24 0.35c1.27 1.13 3.72 3.38 4.72 3.38 0.98 0.01 2.39-1.05 3.94-2.11z" fill="#2A2B28"/>
+                    </svg>
+                </div>
+            {/if}
+        </div>
+        <button on:click={()=>show_turtle = !show_turtle} class="drop-shadow-lg py-4 w-48 sm:w-64 text-xs sm:text-sm bg-white hover:bg-gray-50  text-gray-500 hover:text-gray-800 font-medium border border-transparent rounded-xl">
+            <span class="ml-3 font-bold">
+                Select
+            </span>
+        </button>
+    </div>
+</div>
+
+
+<p class="sm:w-2/3 mx-auto mt-12 mb-24 text-xl text-justify"> 
+    Great way to start web development, and learning it with Svelte and tailwind helped me get into good
+    design patterns without thinking that much about them. <br><br> 
+    
+    But the code wasn't close to perfect. 
+    In fact, the code couldn't have been farther from perfect. 
+    Urban legends say that Angel is still fixing the codebase up to this day.
+    But at least I learned a lot, and thats what matter! ;)
+</p>
+
+
+
+
