@@ -1,6 +1,5 @@
 <script lang="ts">
-    import SkillsHover from '$lib/components/SkillsHover.svelte';
-	import { fly } from 'svelte/transition';
+    import SkillsHover from './SkillsHover.svelte';
 </script>
 
 <div class="relative flex flex-col w-screen items-center text-eerie-900 overflow-x-clip">
