@@ -1,12 +1,10 @@
 <script lang="ts">
     import Nav from './Nav.svelte';
 	import { clickOutside } from "$lib/ioevents/click";
-    import { page_name, page_changed } from "$lib/stores/page"
+    import { page_name, page_changed, link_menu } from "$lib/stores/page"
 	import { fade, fly } from 'svelte/transition';
 
-    let link_menu = false
-
-    $: if (link_menu && window){
+    $: if ($link_menu && window){
         window.addEventListener("scroll", scrollCloseMenu)
     }
 
@@ -19,7 +17,7 @@
         if (window) {
             window.removeEventListener("scroll", scrollCloseMenu)
             setTimeout(()=>{
-                link_menu = false
+                $link_menu = false
             }, 100)
         }
     }
@@ -32,10 +30,10 @@
         in:fade={{duration: 500, delay:150}}
         use:clickOutside 
         on:click-outside={()=>{
-            link_menu = false
+            $link_menu = false
         }}
-        class:h-[calc(7.3rem+2px)]={link_menu}
-        class:h-[3.74rem]={!link_menu}
+        class:h-[calc(7.3rem+2px)]={$link_menu}
+        class:h-[3.74rem]={!$link_menu}
         class="px-4 sm:px-4 py-4 bg-eerie-900 transition-height duration-100"
     >
         <div class="container flex h-fit mx-auto justify-center">
@@ -49,14 +47,14 @@
                             {/key}
                         <span class="text-folly">/&#62</span>
                     </span>
-                    <button on:click={()=>{link_menu=!link_menu}} class="group ml-auto">
-                        {#key link_menu}
-                            <i class:text-folly={link_menu} class:fa-xmark={link_menu} class="fa-fw fa-solid fa-bars animate-jump-and-bounce"/> 
+                    <button on:click={()=>{$link_menu=!$link_menu}} class="group ml-auto">
+                        {#key $link_menu}
+                            <i class:text-folly={$link_menu} class:fa-xmark={$link_menu} class="fa-fw fa-solid fa-bars animate-jump-and-bounce"/> 
                         {/key}
                     </button>
                 </div>
                 
-                {#if link_menu}
+                {#if $link_menu}
                     <Nav/>
                 {/if}
             </div>

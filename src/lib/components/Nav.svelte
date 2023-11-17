@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page_name, page_changed } from "$lib/stores/page"
+    import { page_name, page_changed, highlight_nav_link } from "$lib/stores/page"
 	import { fly } from 'svelte/transition';
 
     let link_menu = false
@@ -28,14 +28,44 @@
     
 <nav in:fly={{duration:100, delay:200, y:-10}} class="flex gap-x-4">
     <div class="flex 1/2 gap-x-4 justify-center font-bold">
-        <a href="/#" class="flex {$page_name === "/"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"> 
+        <a 
+            href="/#"
+            class:animate-bounce={$highlight_nav_link === "/"}
+            class:underline={$highlight_nav_link === "/"}
+            class="flex {$page_name === "/"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"
+        > 
             <span>Home</span>
+            {#if $highlight_nav_link === "/"}
+                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
+                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
+                </div>
+            {/if}
         </a>
-        <a href="/#about" class="flex {$page_name === "/about"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"> 
-            <span>About</span> 
+        <a 
+            href="/#about"
+            class:animate-bounce={$highlight_nav_link === "/about"}
+            class:underline={$highlight_nav_link === "/about"}
+            class="relative flex {$page_name === "/about"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"
+        > 
+            <span>About</span>
+            {#if $highlight_nav_link === "/about"}
+                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
+                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
+                </div>
+            {/if}
         </a>
-        <a href="/#contact" class="flex {$page_name === "/contact"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"> 
-            <span>Contact</span> 
+        <a 
+            href="/#contact"
+            class:animate-bounce={$highlight_nav_link === "/contact"} 
+            class:underline={$highlight_nav_link === "/contact"} 
+            class="flex {$page_name === "/contact"? "animate-jump-and-bounce text-folly cursor-default": "hover:opacity-50"}"
+        > 
+            <span>Contact</span>
+            {#if $highlight_nav_link === "/contact"}
+                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
+                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
+                </div>
+            {/if}
         </a>
     </div>
 

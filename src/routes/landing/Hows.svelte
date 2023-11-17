@@ -2,6 +2,8 @@
     import { fly } from 'svelte/transition'
     import UserReview from '$lib/components/UserReview.svelte';
     import Input from '$lib/components/Input.svelte'
+	import { highlightNavLink } from '$lib/stores/page';
+
 
     let user_review: string = "Man, I love this Website!"
 
@@ -89,10 +91,12 @@
                 <div class="w-4/5 sm:w-full ml-auto">
                     <h1 class="-z-10 text-4xl sm:text-6xl text-center"> WHY WE GOT HERE? </h1>
 
-                    <p class="-mt-6 text-xl text-justify"> 
-                        I wish I knew... Well I actually know, but thats for later ;). Lets take things with time, and see about this porfolio and other projects in the about page.
-                    </p>
-                </div>
+
+                <button class="underline mx-auto" on:click={()=>{
+                    highlightNavLink("/about")
+                }}>
+                    Click me!!!
+                </button>
             </div>
         </div>
     </div>
