@@ -116,7 +116,7 @@
 
 <svelte:options accessors/>
 
-<div use:conveyorBeltLoad class="flex mx-auto relative shadow-lg border-[3px] border-b-[6px] border-black">
+<div use:conveyorBeltLoad class="flex mx-auto relative shadow-lg border-[3px] border-b-[6px] border-black bg-white">
     {#each {length: amount_of_circles} as _, index}
         <div use:circleLoad={index} class="absolute w-4 aspect-square bg-white rounded-full -translate-x-1/2 -translate-y-1/2"/>
     {/each}
