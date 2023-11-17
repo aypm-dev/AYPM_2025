@@ -9,8 +9,7 @@
     <div class="flex flex-col items-start overflow-clip">
         <h1 class="text-3xl"> {user_name}: </h1>
         <p class="flex text-xl sm:whitespace-nowrap items-center"> 
-            {text? text: "I hate empty strings"}
+            {text? text: "I hate empty strings >:("}
         </p>
     </div>
 </div>
-
