@@ -44,10 +44,17 @@
 
 <div class="relative container mt-24">
     <h1 in:fly={{y:20, duration:500+(Math.random() * 200)}} class="absolute -top-8 left-1/2 z-20 text-center text-2xl font-bold italic -translate-x-1/2"> OUR PARTNERS :) </h1>
-    <div in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 200)}} bind:this={background_container} on:touchmove={touchMoveHandler} on:mousemove={mouseHoverHandler} on:mouseleave={mouseLeaveHandler} class="relative flex w-5/6 sm:w-1/2 h-full mx-auto rounded-xl shadow-lg select-none bg-red-500">
+    <div 
+        in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 200)}} 
+        bind:this={background_container} 
+        on:touchmove={touchMoveHandler} 
+        on:mousemove={mouseHoverHandler} 
+        on:mouseleave={mouseLeaveHandler} 
+        class="relative flex w-5/6 sm:w-2/5 h-full mx-auto rounded-xl shadow-lg select-none bg-red-500"
+    >
         <div class="grid grid-cols-4 gap-4 w-full p-4 bg-white rounded-xl border-[3px] border-b-[6px] border-eerie-900">
-            <div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center shrink-0">
-                <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)" src="react-logo.png"loading="lazy" alt="REACT Logo" draggable="false" class="pointer-events-none">
+            <div class="flex w-[60%] aspect-square mx-auto my-auto justify-center items-center shrink-0">
+                <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)" src="sqlite-logo.png" loading="lazy" alt="SQLITE Logo" draggable="false" class="pointer-events-none">
             </div>
             <div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
                 <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(90%)" src="css-logo.png" loading="lazy" alt="CSS Logo" draggable="false" class="h-full pointer-events-none">
@@ -66,7 +73,7 @@
         </div>
         <div bind:this={background_2} style="clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);" class="absolute grid grid-cols-4 gap-4 w-full p-4 overflow-hidden bg-folly rounded-xl border-[3px] border-b-[6px] border-eerie-900">
             <div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center shrink-0">
-                <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)" src="react-logo.png"loading="lazy" alt="REACT Logo" draggable="false" class="pointer-events-none">
+                <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)" src="graphql-logo-color.png"loading="lazy" alt="GRAPHQL Logo" draggable="false" class="pointer-events-none">
             </div>
             <div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center shrink-0">
                 <img style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)" src="tailwind-logo.png" loading="lazy" alt="TAILWIND Logo" draggable="false" class="h-full pointer-events-none">
