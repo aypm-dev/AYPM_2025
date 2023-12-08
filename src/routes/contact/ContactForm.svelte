@@ -10,7 +10,7 @@
 
     export let data: PageData = $page.data
     const dispatch = createEventDispatcher()
-    const animation_duration = 7.5
+    const animation_duration = 7
 
     let form_box: HTMLDivElement
     let success = false
@@ -20,11 +20,43 @@
         applyAction: false,
         onResult({result}){
             if (result.type !== 'success') return
-
             success = true
             dispatch("set_conveyor_belt", 0.01)
-            form_box.classList.add("form_box_animation")
-            form_box.addEventListener("animationend", ()=>{ form_box.classList.remove("form_box_animation") })
+
+            form_box.animate([
+                    {
+                        left: '66.66667%',
+                        offset: 0,
+                    },
+                    {
+                        opacity: 1,
+                        offset: 0.5,
+                    },
+                    {
+                        opacity: 0,
+                        offset: 0.65,
+                    },
+                    {
+                        left: "95%",
+                        top: "-0%",
+                        offset: 0.70,
+                    },
+                    {
+                        left: "66.66667%",
+                        top: "-10%",
+                        opacity: 0,
+                        offset: 0.80,
+                    },
+                    {
+                        top: "0%",
+                        opacity: 1,
+                        offset: 0.825,
+                    },
+                ], {
+                duration: animation_duration * 1000,
+                delay: 250, 
+                easing: "ease-in-out"
+            });
 
             reset_timeout = setTimeout(()=>{
                 reset()
@@ -33,7 +65,6 @@
 
             }, (animation_duration * 0.65) * 1000)
         }
-            
     })
 
     onDestroy(()=>{
@@ -79,42 +110,5 @@
                 <span class="text-black">&#60</span>Button <span class="opacity-75">on:click=&#123;sendEmail&#125;</span><span class="text-black">/&#62</span>
             </Button>
         {/if}
-
     </form>
-
 </div>
-
-<div class="form_box_animation"/>
-
-<style>
-    .form_box_animation {
-        animation: form_box 7.5s;
-        animation-delay: 250ms;
-    }
-
-    @keyframes form_box{
-        0% {
-            left: 66.66667%;
-        }
-        50% {
-            opacity: 1;
-        }
-        65% {
-            opacity: 0;
-        }
-        70% {
-            left: 85%;
-            top: -0%;
-        }
-        75% {
-            opacity: 0;
-            left: 66.66667%;
-            top: -10%;
-        }
-        77.5% {
-            opacity: 1;
-            top: 0%;
-        }
-    }
-    
-</style>
