@@ -1,6 +1,5 @@
 <script>
     import HeroGame from './HeroGame.svelte';
-
 </script>
 
 <div style="grid-template-columns: 3fr 7fr" class="grid w-full gap-4">
@@ -17,7 +16,7 @@
             Don't you get this burst of motivation wanting to create something in the middle of the night? Well, the same happened to me...
         </p>
         <p class="hidden sm:block text-xl text-justify">
-            Watching other's amazing 3D renders created a desire in deep inside of me to get something cool out there! 
+            Watching other's amazing 3D renders created a desire deep inside of me to get something cool out there! 
             Next thing in the morning in my game engine search I found <a href="godotengine.org/">Godot</a>, and how the kids say these days, it was love a first sigth! (do kids even say that? mmh..)<br><br>
         </p>
             
@@ -28,19 +27,15 @@
     </div>
 </div>
 
-
-<p class="sm:hidden text-xl text-justify">
-    Something unique made by AYPM, something I can be proud. A project I can show any one to understand me immediately. Well... maybe I didnt got it first time, but at least I've ideas for the next generations. And thats why I'm going to make a new one each year! So.. <br><br>
-</p>
-
 <p class="sm:w-2/3 mx-auto mt-12 text-xl text-justify"> 
-    Well this is what Heroes Can Be Selfish is, a game I started, programmed, and published in only a month. This includes all artwork, game page, publicity, testing, and trailers!
+    That's what Heroes Can Be Selfish is, a game I started, programmed, and published in only a month out of that inspiration!. This includes the code base, all artwork, game page, publicity, testing, and trailers!
 </p>
 
 <HeroGame/>
 
 <p class="sm:w-2/3 mx-auto mt-12 mb-24 text-xl text-justify"> 
-    Promise: Imagine a world where a floating island creates soda that is stored in an ocean, and that soda goes to the entire process of production runned by kiwis. Thats the theming of this portfolio. 
+    In every story the heroes are the embodyment of the selfless persona looking for the well-being of the people, saving them from mosters and returning back treasures from generations past... <br><br>
+    But what if the hero of this tale could take advantage of his heritage from a family of brave breed kiwis? And when no one in town suppects, their loose coins could be stolen out of their pockets by our kiwi... a broke and kleptomaniac kiwi addicted to purchasing useless items on Amezon to fill his home ;0
 </p>
 
 
