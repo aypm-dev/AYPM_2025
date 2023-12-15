@@ -11,7 +11,7 @@
 
 </script>
 
-<section class="flex flex-col w-screen my-32 p-12 items-center shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly overflow-x-hidden">
+<section class="flex flex-col w-screen my-20 sm:my-32 p-12 items-center shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly overflow-x-hidden">
     <div class="container flex mx-auto justify-center">
         <div class="w-full flex flex-col md:w-2/3 items-center">
             <h1 class="text-6xl sm:text-7xl text-center"> HOW'S AYPM? </h1>
