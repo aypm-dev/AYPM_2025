@@ -8,8 +8,10 @@
             <h1 class="text-6xl sm:text-7xl whitespace-nowrap text-center"> ABOUT? </h1>
 
             <p class="-mt-6 z-10 text-xl text-justify"> 
-                Me, Angel!! I am a software developer, I recently completed my "Bachillerato" in Networking, and Im persuing
-                a career in Web Developer.
+                Yeah! I am a programmer that recently completed his Bachillerato in Networking. My first job got me into Web Apps Development for companies improving on project managment.<br>
+
+                I love getting better at drawing, and body building to hopefully become a big guy 
+                <i class={`fa-solid fa-fw fa-face-grin-beam-sweat`}/>
             </p>
 
             <div in:fly={{y:20, duration:500+(Math.random() * 300), delay:(Math.random() * 300)}} class="absolute flex top-0 -translate-y-1/2 left-[10%] z-10 w-16 aspect-square p-2 justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly">
