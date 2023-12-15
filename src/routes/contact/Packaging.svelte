@@ -40,7 +40,7 @@
         <div bind:this={bottle} class="absolute w-12 h-32 -translate-x-1/2 soda rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"/>
     </div>
 
-    <div class="relative flex flex-col gap-2 pt-80 z-20">
+    <div class="relative flex flex-col gap-2 pt-80 z-[-2]">
         <div class="absolute flex w-fit -translate-x-1/2 top-0 move_bottle origin-bottom">
             <svg class="w-32 h-full" viewBox="0 0 210 512">
                 <path d="M162 15c0-8.281-6.719-15-15-15H61c-8.281 0-15 6.719-15 15v46h116zM162.05 91H46.489C21.078 129.535 0 154.914 0 211h210c0-56.297-23.164-83.61-47.95-120zM132.598 327.523a15.009 15.009 0 0 1-19.207 0l-26.395-21.996-26.394 21.996a15.004 15.004 0 0 1-19.207 0L0 293.027V361h210v-12.977l-51.004-42.5zM0 467c0 24.813 20.188 45 45 45h120c24.813 0 45-20.188 45-45v-76H0zM0 253.973l50.996 42.5 26.399-21.996c5.558-4.637 13.64-4.633 19.203 0l26.398 21.996 26.399-21.996a14.994 14.994 0 0 1 19.203 0L210 308.973V241H0zm0 0"></path>
