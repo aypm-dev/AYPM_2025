@@ -7,6 +7,7 @@
 	import Innoceana from "./projects/Innoceana.svelte";
 	import Portfolio from "./projects/Portfolio.svelte";
 	import HCBS from "./projects/HCBS.svelte";
+	import NetcomBase from "./projects/NetcomBase.svelte";
     
     const projects: project[] = [
         {
@@ -18,19 +19,20 @@
         },
         {
             title: "INNOCEANA RESERVATION",
-            description: "First webdev page, I sure learn a lot<br> Helping this organization to manage reservations!!",
+            description: "First webpage! I sure learned a lot..<br> Helping this organization to manage reservations!!",
             grid_area: "b",
             image_src: "innoceana-logo.png",
             modal: Innoceana
         },
         {
-            title: "POPULAR/AYA CRM",
-            description: "First official projects in my job... Quite the test!",
+            title: "NETCOM BASE",
+            description: "First official projects at my first official job... Quite the journey!",
             grid_area: "c",
+            modal: NetcomBase
         },
         {
             title: "PORTFOLIO",
-            description: "You are looking at it.. Need more details? Well it's you lucky day ;).",
+            description: "You are looking at it.. Here's more details! Because there could be more portfolios in the future ;)",
             grid_area: "d",
             show_kiwi: false,
             modal: Portfolio
