@@ -7,8 +7,15 @@
 
 
 <div style="grid-template-columns: 1fr 2fr" class="grid w-full gap-4">
-    <div class="flex flex-col w-full h-full mt-12 items-end">
+    <div class="hidden sm:flex flex-col w-full h-full mt-12 items-end">
         {#each {length: 12} as index} 
+            <h1 class="-mt-[39.5px] sm:-mt-10 text-6xl sm:text-7xl whitespace-nowrap"> ORG? </h1>
+        {/each}
+    </div>
+
+
+    <div class="sm:hidden flex flex-col w-FIT h-full mt-12 items-end">
+        {#each {length: 16} as _, index}
             <h1 class="-mt-[39.5px] sm:-mt-10 text-6xl sm:text-7xl whitespace-nowrap"> ORG? </h1>
         {/each}
     </div>
@@ -20,21 +27,19 @@
             In May 2022, I started my internship for high school with Lionix, a small web development company for business. <br><br>
         </p>
         <p class="hidden sm:block text-xl text-justify">
-            My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
-            
-            Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quickly got into contact. <br> <br> 
+            My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization passionate about preserving the oceans for the future!  <br> <br> 
+            Matias often undertakes pro bono projects for organizations to contribute to the community. Since Innoceana had a presence in Costa Rica 🇨🇷, they quickly got in touch. <br> <br> 
         </p>
     </div>
 </div>
 
 <p class="mt-4 sm:hidden text-xl text-justify">
-    My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
-    
-    Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quickly got into contact. <br> <br> 
+    My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization passionate about preserving the oceans for the future!  <br> <br> 
+    Matias often undertakes pro bono projects for organizations to contribute to the community. Since Innoceana had a presence in Costa Rica 🇨🇷, they quickly got in touch. <br> <br> 
 </p>
 
 <p class="sm:w-2/3 mt-4 mx-auto text-xl text-justify"> 
-    And by the nature of the app they put me in charge! A web page to save Innoceana time managing reservations for their various activities like snorkeling, whale monitoring, scuba diving,a and internship applying. The single page app had support for multiple languages, online contracts that automatically generated PDFs for printing, and google AUTH integration.
+    And, by the nature of the app, they put me in charge! I developed a web page to save Innoceana time managing reservations for their various activities like snorkeling, whale monitoring, scuba diving, and internship applications. The single-page app had support for multiple languages, online contracts that automatically generated PDFs for printing, and Google Auth integration.
 </p>
 
 <div class="mt-12 relative w-fit mx-auto">
@@ -66,15 +71,19 @@
 </div>
 
 
-<p class="sm:w-2/3 mx-auto mt-12 mb-24 text-xl text-justify"> 
+<p class="sm:w-2/3 mx-auto mt-12 text-xl text-justify"> 
     Great way to start web development! And Svelte and Tailwind got me into good
     design patterns without thinking that much about them. <br><br> 
     
     But the code wasn't close to perfect. 
     In fact, the code couldn't have been farther from perfect. 
     Urban legends say that Angel is still fixing the codebase up to this day.
-    But at least I learned a lot, and that's what matter! <br><br> 
+    But at least I learned a lot, and that's what matters! <br><br> 
     ;)
+</p>
+
+<p class="sm:w-2/3 mx-auto mt-8 mb-24 text-xl text-justify"> 
+    - Small update and great news!! Innoceana was able to raise enough budget to focus on marine study and conservation without having to worry about conducting tours and public activities for the foreseeable future. It's a bit sad because the app would get less use, but I'm happy they can put 100% of their effort into their mission!
 </p>
 
 
