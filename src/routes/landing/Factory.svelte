@@ -28,11 +28,11 @@
 </script>
 
 <section class="flex flex-col w-fit h-[42rem] mt-12 relative mx-auto">
-    <ul class="grid grid-cols-3 w-full sm:w-[40rem] gap-2">
+    <ul class="grid grid-cols-3 w-full sm:w-[40rem] gap-2 overflow-clip">
         <h1
             in:fade={{delay: 1750, duration: 500}}
             style="clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);"
-            class="group/aypm_letters absolute flex top-1/2 -translate-y-[75%] w-full h-44 z-[1] sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[2rem] hover:text-[1.5rem] sm:text-[2.95rem] sm:hover:text-[2.99rem] select-none font-bold"
+            class="group/aypm_letters absolute flex top-1/2 -translate-y-[75%] w-full h-44 z-[1] sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[1.85rem] hover:text-[1.5rem] sm:text-[2.95rem] sm:hover:text-[2.99rem] select-none font-bold"
         >
             <button on:click={letterClick} class="translate-x-[10px] translate-y-[50px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75">A</button>
             <button on:click={letterClick} class="translate-x-[9px] translate-y-[65px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]">N</button>
