@@ -12,7 +12,7 @@
     const projects: project[] = [
         {
             title: "HCBS",
-            description: "Leyends say heroes are these courageous and compassionate, but what <i>if they can be selfish</i> here? Let me talk about a little game about a this kiwi.",
+            description: "Leyends say heroes are courageous and compassionate, but what <i>if they become selfish</i> here? Let me talk about a little game about a this kiwi.",
             grid_area: "a",
             image_src: "hcbs.png",
             modal: HCBS
