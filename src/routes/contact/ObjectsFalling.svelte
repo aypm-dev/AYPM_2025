@@ -34,7 +34,7 @@
     
     function addObject(){
         const id = crypto.randomUUID()
-        const scale = getRandomNumberInRange([[0.5, 2]])
+        const scale = Math.random() * (2.5 - 0.9) + 0.9
         const random_x = getRandomNumberInRange([[15, 40], [60, 85]])
         const random_y = getRandomNumberInRange([[0, 10]])
 
