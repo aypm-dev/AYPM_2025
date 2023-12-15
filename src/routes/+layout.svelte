@@ -27,11 +27,6 @@
 	} 
 </script> 
 
-<svelte:head>
-	<script src="//cdn.jsdelivr.net/npm/eruda"></script>
-	<script>eruda.init();</script>
-</svelte:head>
-
 {#if show_nav}
 	<Header/>
 {/if}
