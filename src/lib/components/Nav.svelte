@@ -36,9 +36,7 @@
         > 
             <span>Home</span>
             {#if $highlight_nav_link === "/"}
-                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
-                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
-                </div>
+                <i class="absolute -top-2 left-1/2 -translate-x-1/2 fa-solid fa-hand-point-down  fa-xl"/>
             {/if}
         </a>
         <a 
@@ -49,9 +47,7 @@
         > 
             <span>About</span>
             {#if $highlight_nav_link === "/about"}
-                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
-                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
-                </div>
+                <i class="absolute -top-2 left-1/2 -translate-x-1/2 fa-solid fa-hand-point-down  fa-xl"/>
             {/if}
         </a>
         <a 
@@ -62,9 +58,7 @@
         > 
             <span>Contact</span>
             {#if $highlight_nav_link === "/contact"}
-                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex">
-                    <i class="fa-solid fa-hand-point-down  fa-xl"/>
-                </div>
+                <i class="absolute -top-2 left-1/2 -translate-x-1/2 fa-solid fa-hand-point-down fa-xl"/>
             {/if}
         </a>
     </div>
