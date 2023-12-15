@@ -22,7 +22,7 @@
         <p class="hidden sm:block text-xl text-justify">
             My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
             
-            Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quicly got in contact. <br> <br> 
+            Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quickly got into contact. <br> <br> 
         </p>
     </div>
 </div>
@@ -30,11 +30,11 @@
 <p class="mt-4 sm:hidden text-xl text-justify">
     My boss at the time, Matias, assigned me a project with Innoceana, a marine conservation organization that is passionate about preserving the oceans for the future! <br><br>
     
-    Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quicly got in contact. <br> <br> 
+    Matias often provides free projects to organizations to help the community, and because Innoceana had an institution in Costa Rica 🇨🇷 they quickly got into contact. <br> <br> 
 </p>
 
 <p class="sm:w-2/3 mt-4 mx-auto text-xl text-justify"> 
-    And by the nature of the app they put me in charge! A web page to save Innoceana time managing reservations for their various activities like snorkeling, whale monitoring, scuba diving,a and internship applying. The single page app had support for multiple languages, had online contracts that automatically generated PDFs for printing, and google AUTH integration.
+    And by the nature of the app they put me in charge! A web page to save Innoceana time managing reservations for their various activities like snorkeling, whale monitoring, scuba diving,a and internship applying. The single page app had support for multiple languages, online contracts that automatically generated PDFs for printing, and google AUTH integration.
 </p>
 
 <div class="mt-12 relative w-fit mx-auto">
@@ -67,13 +67,14 @@
 
 
 <p class="sm:w-2/3 mx-auto mt-12 mb-24 text-xl text-justify"> 
-    Great way to start web development, and learning it with Svelte and tailwind helped me get into good
+    Great way to start web development! And Svelte and Tailwind got me into good
     design patterns without thinking that much about them. <br><br> 
     
     But the code wasn't close to perfect. 
     In fact, the code couldn't have been farther from perfect. 
     Urban legends say that Angel is still fixing the codebase up to this day.
-    But at least I learned a lot, and thats what matter! ;)
+    But at least I learned a lot, and that's what matter! <br><br> 
+    ;)
 </p>
 
 
