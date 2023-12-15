@@ -28,7 +28,7 @@
 </script>
 
 <section class="flex flex-col w-fit h-[42rem] mt-12 relative mx-auto">
-    <ul class="grid grid-cols-3 w-full sm:w-[40rem] gap-2 overflow-clip">
+    <ul class="grid grid-cols-3 w-full sm:w-[40rem] gap-2">
         <h1
             in:fade={{delay: 1750, duration: 500}}
             style="clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);"
