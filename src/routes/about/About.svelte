@@ -8,7 +8,7 @@
             <h1 class="text-6xl sm:text-7xl whitespace-nowrap text-center"> ABOUT? </h1>
 
             <p class="-mt-6 z-10 text-xl text-justify"> 
-                Yeah! I am a programmer that recently completed his Bachillerato in Networking. My first job got me into Web Apps Development for companies improving on project managment.<br>
+                Yeah! I am a programmer that recently completed his Bachillerato in Networking. I've programming for 4 years mostly in Scripting languages like Python, Lua, GDScript, and TypeScript. My first job got me into Web Apps Development B2B, improving on project managment abilities!<br>
 
                 I love getting better at drawing, and body building to hopefully become a big guy 
                 <i class={`fa-solid fa-fw fa-face-grin-beam-sweat`}/>
