@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-  <title> | AYMP {$page_name? "| " + $page_name.replace("/", "").toLocaleUpperCase(): ""}</title>
+  <title> | AYPM {$page_name? "| " + $page_name.replace("/", "").toLocaleUpperCase(): ""}</title>
 </svelte:head>
 
 <svelte:component this={$page}/>
