@@ -22,7 +22,7 @@
         </p>
             
         <h3 class="mt-auto hidden sm:block text-3xl text-center">
-            WELCOME TO THE FIRST EDITION OF, well... AYMP PORTFOLIOS
+            WELCOME TO THE FIRST EDITION OF, well... AYPM PORTFOLIOS
         </h3>
 
     </div>
@@ -34,7 +34,7 @@
 </p>
 
 <h3 class="sm:hidden text-3xl text-center">
-    WELCOME TO THE FIRST EDITION OF, well... AYMP PORTFOLIOS
+    WELCOME TO THE FIRST EDITION OF, well... AYPM PORTFOLIOS
 </h3>
 
 <div class="flex w-full mt-12 items-center justify-center">
