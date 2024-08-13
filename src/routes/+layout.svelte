@@ -29,9 +29,10 @@
 
 <svelte:head>
 	<meta charset="UTF-8" />
+
 	<meta
 		name="description"
-		content="Angel Paniagua Mora's Portfolio, filled with proyects I worked in before, and important info."
+		content="Explore the portfolio of Angel Paniagua Mora, filled with projects I worked in before, and important info."
 	/>
 	<meta
 		name="keywords"
@@ -40,12 +41,21 @@
 	<meta name="author" content="Angel Paniagua Mora" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<meta property="og:title" content="Angel Paniagua Mora | Full-Stack Developer Portfolio" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://aypm.dev" />
+	<meta property="og:image" content="https://www.aypm.dev/hcbs.png" />
+
 	<script type="application/ld+json">
         {
-            "@context": "http://aypm.dev",
+            "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "AYPM Angel Paniagua Mora",
+            "name": "Angel Paniagua Mora Portfolio",
             "url": "https://aypm.dev",
+            "author": {
+                "@type": "Person",
+                "name": "Angel Paniagua Mora"
+            }
         }
 	</script>
 </svelte:head>
