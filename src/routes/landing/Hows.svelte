@@ -20,8 +20,7 @@
                 Hello Angel here, a {getAge()} year old Web Developer, Inspired by what the limit of human creativity is, and looking to give the world the best of myself! <br><br>
 
                 And, more importantly, I'm also a software engineer.. well more like a Full-stack Developer.. well more like a Front End Developer, but I'm really good at it!... <br>
-                What you don't belive me? Just look at your own review for my beautiful website down below!
-
+                What? You don't belive me? Just take a look at your own review for this beautiful website down below!
             </p>
         </div>
     </div>
@@ -34,7 +33,7 @@
                 <h1 class="-z-10 text-4xl sm:text-6xl text-center"> HOW IT ALL STARTED? </h1>
 
                 <p class="-mt-6 text-xl text-justify"> 
-                    It all started as a way to add more fields to my curriculum. You know, learning python using tutorials from Youtube and doing simple apps, but I deeply feel in love with programming after I learned how to recreate battles from one of my favorite games using the Lua programming language. <br> The best way to get into software developer is to find a platform to put your skill into action, that help me a lot ;)
+                    It all started as 5 minute adventure to add more fields to my Curriculum. You know, learning python using tutorials from Youtube and doing simple apps and add it with a subtitle "12 years of experience". But I deeply feel in love with programming after I learnt how to user it to connect with more communities, recreating battles from one of my favorite games using the Lua programming language. <br> The best way to get into software developer is to find a platform to put your skill into action, that helped me a lot ;)
                 </p>
             </div>
 
@@ -56,7 +55,7 @@
                 <p class="-mt-6 text-xl text-justify"> 
                     Three years later. I started programming websites for my job. At that point I got the skills to make my own portfolio that would help me show my work, and that's aypm.dev! But let's take things with time, and see more about this portfolio, me, and other projects on the About page. <br/> <br/>
 
-                    "Mmm so where's the about page?" Well the button below would guide you ;)
+                    "Mmm, so.. where's the about page?" You may ask, well there's a cool button down below that would guide you ;)
                 </p>
 
                 <div class="flex mt-4 w-full justify-center whitespace-nowrap">

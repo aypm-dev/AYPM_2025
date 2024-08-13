@@ -21,7 +21,7 @@
     
             <Input bind:value={user_review} maxlength={27} label="Your review" name="review_input" autocomplete={false}/>
             <p class="mt-1 text-xs text-right select-none opacity-75"> 
-                For legal reasons, this may or not be a real review. My mom doesn't like lies :(                
+                For legal reasons, this may or may not be a real review. My mom doesn't like lies :(                
             </p>
             {#key user_review == "Man, I love this Website!"} <!-- reload element (play fly animation) only when user review changes from the default value, but not when user reviews get_slot_changes -->
                 <p in:fly={{y:-5, duration:100}} class="mt-4 text-xl text-center"> 
@@ -41,7 +41,7 @@
 <div class="flex sm:hidden flex-col h-[50%] mt-16 justify-center">
     <Input bind:value={user_review} maxlength={27} label="Your review" name="review_input" autocomplete={false}/>
     <p class="mt-1 text-xs text-right select-none opacity-75"> 
-        For legal reasons, this may or not be a real review. My mom doesn't like lies :(                
+        For legal reasons, this may or may not be a real review. My mom doesn't like lies :(                
     </p>
     
     {#key user_review == "Man, I love this Website!"} <!-- reload element (play fly animation) only when user review changes from the default value, but not when user reviews get_slot_changes -->
