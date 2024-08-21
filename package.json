@@ -1,6 +1,6 @@
 {
-	"name": "spock",
-	"version": "0.0.1",
+	"name": "aypm",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -14,7 +14,6 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
-		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -42,8 +41,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sendgrid/mail": "^7.7.0",
-		"eruda": "^3.0.1",
 		"nodemailer": "^6.9.7"
 	}
 }
