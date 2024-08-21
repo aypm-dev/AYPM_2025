@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>&#60AYPM /&#62 Frontend Developer</title>
+	<title>&#60AYPM /&#62 Frontend Developer Portfolio</title>
 </svelte:head>
 
 <CloudManager />
