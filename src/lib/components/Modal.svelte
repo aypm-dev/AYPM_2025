@@ -31,8 +31,8 @@
 
 {#if is_modal_open}
 	<div
-		out:fade={{ duration: 100, delay: 650 }}
-		in:fade={{ duration: 100 }}
+		out:fade|global={{ duration: 100, delay: 650 }}
+		in:fade|global={{ duration: 100 }}
 		class="fixed inset-0 z-30 flex justify-center items-center bg-black bg-opacity-50 transition duration-100"
 	>
 		<div
@@ -40,7 +40,7 @@
 			on:click-outside={closeModal}
 			use:keydownEscape
 			on:keydown-escape={closeModal}
-			out:leave={{ duration: 750, delay: -350 }}
+			out:leave|global={{ duration: 750, delay: -350 }}
 			class="relative flex flex-col w-full sm:w-[48rem] max-h-[32rem] mx-4 p-4 items-center rounded-xl ring-2 ring-white shadow-lg bg-black"
 			role="dialog"
 		>
@@ -66,7 +66,7 @@
 			</div>
 
 			<footer class="flex absolute top-full w-full px-4 -translate-y-1/2">
-				<div class="flex ml-auto gap-4" out:leave={{ duration: 750, delay: 100 }}>
+				<div class="flex ml-auto gap-4" out:leave|global={{ duration: 750, delay: 100 }}>
 					{#if close_button}
 						<Button type="secondary" on:click={closeModal} black_border>
 							{close_button_text}

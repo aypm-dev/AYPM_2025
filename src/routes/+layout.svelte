@@ -2,16 +2,14 @@
 	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { page_name } from '$lib/stores/page';
 	import { onMount } from 'svelte';
-	import { browser } from '$app/environment';
+	import { page } from '$app/stores';
 
-	let show_nav = true;
+	let show_nav = $page.url.pathname === '/' ? false : true;
 
 	onMount(async () => {
-		if ($page_name == '/') {
+		if ($page.url.pathname === '/') {
 			document.addEventListener('scroll', scrollHandler, false);
-			show_nav = false;
 		}
 	});
 
@@ -21,18 +19,12 @@
 			document.removeEventListener('scroll', scrollHandler, false);
 		}
 	}
-
-	if (browser) {
-		document.body.classList.add('no-scroll-bar');
-	}
 </script>
 
 <svelte:head>
 	<meta charset="UTF-8" />
 	<link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
 	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png" />
-	<link rel="icon" href="https://aypm.dev/favicon.png" sizes="32x32" type="image/png" />
-	<link rel="icon" href="https://aypm.dev/favicon.png" sizes="16x16" type="image/png" />
 
 	<meta
 		name="description"

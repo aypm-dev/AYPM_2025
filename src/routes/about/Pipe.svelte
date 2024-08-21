@@ -58,7 +58,7 @@
 
     <div class="flex w-28 h-12 rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white text-black justify-end p-1">
         {#key bubbles_popped}
-            <span in:fly={{duration: 100, y: -10}} class="font-bold text-xs text-center">
+            <span in:fly|global={{duration: 100, y: -10}} class="font-bold text-xs text-center">
                 {bubbles_popped !== 0? "Carbon dioxide errors:" + bubbles_popped: ""}
             </span>
         {/key}

@@ -19,7 +19,7 @@
 
 <i
     use:load
-    transition:fade|local={{duration:750}}
+    transition:fade={{duration:750}}
     class="-translate-x-1/2 absolute -z-10 fa-solid fa-cloud fa-2xl opacity-10 sm:opacity-25"
 />
 

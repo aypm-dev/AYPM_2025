@@ -5,7 +5,7 @@
 
     export let title: string
     export let description: string
-    export let modal: typeof SvelteComponent | undefined;
+    export let modal: typeof SvelteComponent<any> | undefined;
     export let grid_area: string;
     export let image_src: string;
     export let show_kiwi = Math.random() > 0.5

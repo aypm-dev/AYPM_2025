@@ -1,11 +1,11 @@
 <script lang="ts">
-	import CloudManager from './landing/CloudManager.svelte';
-	import Factory from './landing/Factory.svelte';
-	import Hows from './landing/Hows.svelte';
+	import CloudManager from './CloudManager.svelte';
+	import Factory from './Factory.svelte';
+	import Hows from './Hows.svelte';
 
 	let found_kiwi = false;
 
-	function handdleFoundKiwi() {
+	function handdleFound_kiwi() {
 		found_kiwi = !found_kiwi;
 		if (found_kiwi) {
 			setTimeout(() => {
@@ -15,16 +15,12 @@
 	}
 </script>
 
-<svelte:head>
-	<title>&#60AYPM /&#62 Frontend Developer</title>
-</svelte:head>
-
 <CloudManager />
 <Factory />
 <Hows />
 
 <div class="flex flex-col mx-auto items-center gap-y-8 mb-32">
-	<button on:click={handdleFoundKiwi} class="hover:scale-110">
+	<button on:click={handdleFound_kiwi} class="hover:scale-110">
 		<svg
 			class:animate-spin-forwards={found_kiwi}
 			class:hover:animate-none={!found_kiwi}

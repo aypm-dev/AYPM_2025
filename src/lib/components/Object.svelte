@@ -23,7 +23,7 @@
 
 <div
     use:load
-    transition:fade|local={{duration:750}}
+    transition:fade={{duration:750}}
     class="opacity-10 absolute -z-10"
 >
     {#if object_type === "crate"}

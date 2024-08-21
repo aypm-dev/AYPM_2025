@@ -44,6 +44,6 @@
     on:click
     on:click={bubblePopped}
     use:bubbleLoad
-    out:fade={{duration: 100}}
+    out:fade|global={{duration: 100}}
     class="absolute -translate-y-1/2 -z-10 aspect-square rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly transition-all duration-[20ms]"
 />
