@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>AYPM | Contact me</title>
+	<title>&#60AYPM /&#62 Contact me</title>
 </svelte:head>
 
 <ObjectsFalling />

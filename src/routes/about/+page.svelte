@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>AYPM | About</title>
+	<title>&#60AYPM /&#62 About Angel Paniagua Mora</title>
 </svelte:head>
 
 <div class="relative flex flex-col w-screen pb-48 items-center text-eerie-900 overflow-x-clip">
