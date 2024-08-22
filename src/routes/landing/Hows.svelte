@@ -15,7 +15,7 @@
 >
 	<div class="container flex mx-auto justify-center">
 		<div class="w-full flex flex-col md:w-2/3 items-center">
-			<h1 class="text-6xl sm:text-7xl text-center">HOW'S AYPM?</h1>
+			<h1 class="text-6xl sm:text-7xl text-center">WHO'S AYPM?</h1>
 
 			<p class="z-10 -mt-6 text-xl text-justify">
 				Hello Angel here, a {getAge()} year old Web Developer, Inspired by what the limit of human creativity
