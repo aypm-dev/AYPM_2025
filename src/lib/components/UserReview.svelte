@@ -1,15 +1,45 @@
 <script lang="ts">
-    export let emote = "fa-heart"
-    export let user_name: string = "You"
-    export let text: string = ""
+	export let emote = 'fa-heart';
+	export let user_name: string = 'You';
+	export let text: string = '';
 </script>
 
-<li class="flex flex-nowrap flex-shrink-0 w-64 sm:w-full h-32 p-4 gap-4 items-center rounded-xl border-[3px] border-b-[6px] text-eerie-900 border-eerie-900 shadow-lg bg-white">
-    <i class={`fa-solid fa-2xl fa-fw ${emote}`}/>
-    <div class="flex flex-col items-start overflow-clip">
-        <h1 class="text-3xl"> {user_name}: </h1>
-        <p class="flex text-base md:text-xl items-center"> 
-            {text? text: "I hate empty strings >:("}
-        </p>
-    </div>
+<li
+	class="flex flex-nowrap flex-shrink-0 w-64 sm:w-full h-32 p-4 gap-4 items-center rounded-xl border-[3px] border-b-[6px] text-eerie-900 border-eerie-900 shadow-lg bg-white"
+>
+	{#if emote === 'fa-heart'}
+		<svg
+			width="32"
+			height="34"
+			viewBox="0 0 512.001 512.001"
+			xml:space="preserve"
+			class="flex-shrink-0 min-w-[32px] mx-2 min-h-[32px]"
+			><g
+				><path
+					d="M256.001 477.407c-2.59 0-5.179-.669-7.499-2.009-2.52-1.454-62.391-36.216-123.121-88.594-35.994-31.043-64.726-61.833-85.396-91.513C13.237 256.885-.214 219.943.003 185.49c.254-40.09 14.613-77.792 40.435-106.162 26.258-28.848 61.3-44.734 98.673-44.734 47.897 0 91.688 26.83 116.891 69.332 25.203-42.501 68.994-69.332 116.891-69.332 35.308 0 68.995 14.334 94.859 40.362 28.384 28.563 44.511 68.921 44.247 110.724-.218 34.393-13.921 71.279-40.728 109.632-20.734 29.665-49.426 60.441-85.279 91.475-60.508 52.373-119.949 87.134-122.45 88.588a15.008 15.008 0 0 1-7.541 2.032z"
+				/>
+			</g>
+		</svg>
+	{:else}
+		<svg
+			width="32"
+			height="34"
+			viewBox="0 0 512 512"
+			xml:space="preserve"
+			class="flex-shrink-0 mx-2 min-w-[32px] min-h-[32px]"
+			><g
+				><path
+					d="M497.697 242.93c12.975-12.641 17.554-31.194 11.954-48.41-5.59-17.223-20.199-29.54-38.126-32.145l-110.687-16.083a17.259 17.259 0 0 1-12.986-9.435L298.351 36.549c-8.015-16.235-24.244-26.32-42.352-26.32s-34.337 10.085-42.352 26.32l-49.501 100.307a17.25 17.25 0 0 1-12.977 9.435L40.475 162.374c-17.928 2.606-32.537 14.923-38.124 32.137-5.603 17.225-1.024 35.779 11.947 48.416l80.098 78.084a17.23 17.23 0 0 1 4.96 15.249L80.444 446.514c-3.056 17.85 4.143 35.548 18.788 46.186 14.648 10.643 33.708 12.022 49.744 3.599l99.002-52.052a17.242 17.242 0 0 1 16.036-.003l99.01 52.055c16.036 8.424 35.096 7.044 49.744-3.599 14.644-10.639 21.844-28.336 18.788-46.186l-18.913-110.249a17.237 17.237 0 0 1 4.962-15.257z"
+					fill="#000000"
+				/>
+			</g>
+		</svg>
+	{/if}
+
+	<div class="flex flex-col items-start overflow-clip">
+		<h1 class="text-3xl">{user_name}:</h1>
+		<p class="flex text-base md:text-xl items-center">
+			{text ? text : 'I hate empty strings >:('}
+		</p>
+	</div>
 </li>

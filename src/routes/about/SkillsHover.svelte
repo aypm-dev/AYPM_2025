@@ -51,6 +51,7 @@
 	}
 </script>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="relative container mt-24">
 	<h1
 		in:fly|global={{ y: 20, duration: 500 + Math.random() * 200 }}
@@ -58,6 +59,7 @@
 	>
 		OUR PARTNERS :)
 	</h1>
+
 	<div
 		in:fly|global={{ y: 20, duration: 500 + Math.random() * 300, delay: Math.random() * 200 }}
 		bind:this={background_container}
@@ -102,7 +104,28 @@
 			<div class="absolute top-[calc(100%+0.5rem)] select-none">
 				<span class="text-sm">
 					{touch ? 'Hey! Slide up here' : 'Hey! Hover up here'}
-					<i class="fa-solid fa-turn-up mr-2" />
+					<svg
+						width="15"
+						height="15"
+						viewBox="0 0 682.667 682.667"
+						style="enable-background:new 0 0 512 512"
+						xml:space="preserve"
+						class="inline -mt-1"
+					>
+						<g>
+							<defs
+								><clipPath id="a" clipPathUnits="userSpaceOnUse"
+									><path d="M0 512h512V0H0Z" /></clipPath
+								>
+							</defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)"
+								><path
+									d="M0 0a25.638 25.638 0 0 0-26.675-10.431l-23.343 5.162v-112.899c0-8.284-6.715-15-15-15h-63.722c-8.284 0-15 6.716-15 15V-5.269l-23.343-5.162C-177.308-12.694-187.778-8.598-193.758 0a25.64 25.64 0 0 0-.495 28.637l73.401 113.742c5.278 8.179 14.239 13.061 23.973 13.061a28.42 28.42 0 0 0 23.973-13.061L.495 28.637A25.638 25.638 0 0 0 0 0m84.14 192.156c-48.352 48.351-112.639 74.98-181.019 74.98-68.38 0-132.667-26.629-181.019-74.98-48.352-48.352-74.981-112.64-74.981-181.02 0-68.38 26.629-132.667 74.981-181.019 48.352-48.352 112.639-74.981 181.019-74.981 68.38 0 132.667 26.629 181.019 74.981 48.352 48.352 74.981 112.639 74.981 181.019 0 68.38-26.629 132.668-74.981 181.02"
+									style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+									transform="translate(352.879 244.864)"
+								/>
+							</g>
+						</g>
+					</svg>
 				</span>
 			</div>
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
