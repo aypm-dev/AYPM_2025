@@ -77,7 +77,7 @@
 <div
 	in:fly|global={{ y: -20, duration: 500 }}
 	bind:this={form_box}
-	class="absolute -translate-x-2/3 sm:-translate-x-1/2 w-80 sm:w-96 h-[32rem] sm:h-96 left-2/3 px-6 py-8 rounded-xl shadow-lg text-eerie-900 border-[3px] border-b-[6px] border-eerie-900 bg-white"
+	class="absolute pointer-events-auto -translate-x-2/3 sm:-translate-x-1/2 w-80 sm:w-96 h-[32rem] sm:h-96 left-2/3 px-6 py-8 rounded-xl shadow-lg text-eerie-900 border-[3px] border-b-[6px] border-eerie-900 bg-white"
 >
 	<form method="POST" use:enhance>
 		<div class="hidden">
