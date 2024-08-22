@@ -38,10 +38,10 @@
 				autocomplete={false}
 			/>
 
-			<p class="mt-1 text-xs text-right select-none opacity-75">
+			<p aria-disabled="true" class="mt-1 text-xs text-right select-none opacity-75">
 				For legal reasons, this may or may not be a real review. My mom doesn't like lies :(
 			</p>
-			{#if user_review.toLowerCase() === 'man i love this website'}
+			{#if user_review.toLowerCase() === 'man, i love this website!'}
 				<p in:fly={{ y: -5, duration: 100 }} class="mt-4 text-xl text-center">
 					Oh, really? That's so nice of you!!
 					<i class="fa-solid fa-face-kiss-wink-heart" />
@@ -54,7 +54,7 @@
 			{/if}
 		</div>
 
-		<div
+		<ul
 			class="xl:col-span-2 flex flex-col h-[54rem] gap-4 items-end animate-infinite-scroll select-none"
 		>
 			{#each { length: 6 } as _, index}
@@ -64,7 +64,7 @@
 					text={user_review}
 				/>
 			{/each}
-		</div>
+		</ul>
 	</div>
 </div>
 
@@ -80,7 +80,7 @@
 		For legal reasons, this may or may not be a real review. My mom doesn't like lies :(
 	</p>
 
-	{#if user_review.toLowerCase() === 'man i love this website'}
+	{#if user_review.toLowerCase() === 'man, i love this website!'}
 		<p in:fly={{ y: -5, duration: 100 }} class="mt-4 text-xl text-center">
 			Oh, really? That's so nice of you!!
 			<i class="fa-solid fa-face-kiss-wink-heart" />
