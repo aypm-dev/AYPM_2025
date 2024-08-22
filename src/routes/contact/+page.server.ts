@@ -14,6 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const schema = z.object({
+	name: z.string().optional(),
 	email: z.string().email(),
 	body: z.string().refine((value) => value.length > 0, 'Body required')
 });
@@ -27,7 +28,8 @@ export const load = async () => {
 export const actions = {
 	default: async ({ request }) => {
 		const form = await superValidate(request, schema);
-		if (!form.valid) return fail(400, { form });
+		if (!form.valid || form.data.name) return fail(400, { form });
+		//name is a honeypot field
 
 		try {
 			const mailOptions = {
