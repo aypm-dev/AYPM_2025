@@ -40,119 +40,163 @@
 				style="clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);"
 				class="group/aypm_letters absolute flex top-1/2 -translate-y-[75%] w-full h-44 z-[1] sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[1.85rem] hover:text-[1.5rem] sm:text-[2.95rem] sm:hover:text-[2.99rem] select-none font-bold"
 			>
-				<button
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[10px] translate-y-[50px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>A</button
-				>
-				<button
+					class="cursor-pointer translate-x-[10px] translate-y-[50px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>A
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[9px] translate-y-[65px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>N</button
-				>
-				<button
+					class="cursor-pointer translate-x-[9px] translate-y-[65px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>N
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[4px] translate-y-[40px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>G</button
-				>
-				<button
+					class="cursor-pointer translate-x-[4px] translate-y-[40px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>G
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[0px] translate-y-[60px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>E</button
-				>
-				<button
+					class="cursor-pointer translate-x-[0px] translate-y-[60px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>E
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[3px] translate-y-[40px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>L</button
-				>
+					class="cursor-pointer translate-x-[3px] translate-y-[40px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>L
+				</span>
 				&nbsp
-				<button
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[8px] translate-y-[-5px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-100"
-					>Y</button
-				>
-				<button
+					class="cursor-pointer translate-x-[8px] translate-y-[-5px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-100"
+					>Y
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[4px] translate-y-[12px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>A</button
-				>
-				<button
+					class="cursor-pointer translate-x-[4px] translate-y-[12px] group-hover/aypm_letters:translate-y-[48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>A
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[15px] translate-y-[0px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>D</button
-				>
-				<button
+					class="cursor-pointer translate-x-[15px] translate-y-[0px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>D
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[2px] translate-y-[30px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>E</button
-				>
-				<button
+					class="cursor-pointer translate-x-[2px] translate-y-[30px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>E
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[1px] translate-y-[15px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>R</button
-				>
+					class="cursor-pointer translate-x-[1px] translate-y-[15px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>R
+				</span>
 				&nbsp
-				<button
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[6px] translate-y-[-22px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-100"
-					>P</button
-				>
-				<button
+					class="cursor-pointer translate-x-[6px] translate-y-[-22px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-100"
+					>P
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[0px] translate-y-[-6px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>A</button
-				>
-				<button
+					class="cursor-pointer translate-x-[0px] translate-y-[-6px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>A
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-3px] translate-y-[12px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>N</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-3px] translate-y-[12px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>N
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-3px] translate-y-[-5px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>I</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-3px] translate-y-[-5px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>I
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-5px] translate-y-[-10px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>A</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-5px] translate-y-[-10px] group-hover/aypm_letters:translate-y-0 group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>A
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-4px] translate-y-[-25px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>G</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-4px] translate-y-[-25px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>G
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-5px] translate-y-[-10px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>U</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-5px] translate-y-[-10px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>U
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-7px] translate-y-[-30px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>A</button
-				>
+					class="cursor-pointer translate-x-[-7px] translate-y-[-30px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>A
+				</span>
 				&nbsp
-				<button
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-8px] translate-y-[-60px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
-					>M</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-8px] translate-y-[-60px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75"
+					>M
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-6px] translate-y-[-70px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>O</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-6px] translate-y-[-70px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>O
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-8px] translate-y-[-50px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
-					>R</button
-				>
-				<button
+					class="cursor-pointer translate-x-[-8px] translate-y-[-50px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55]"
+					>R
+				</span>
+				<span
+					role="complementary"
+					on:keydown={letterClick}
 					on:click={letterClick}
-					class="translate-x-[-10px] translate-y-[-65px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75 group-hover/aypm_letters:delay-[400ms]"
-					>A</button
-				>
+					class="cursor-pointer translate-x-[-10px] translate-y-[-65px] group-hover/aypm_letters:translate-y-[-48px] group-hover/aypm_letters:translate-x-0 transition-transform ease-[0.68,-0.55,0.27,1.55] delay-75 group-hover/aypm_letters:delay-[400ms]"
+					>A
+				</span>
 			</h1>
 
 			<section
