@@ -91,7 +91,7 @@ module.exports = {
 					800: '#303636',
 					900: '#020404'
 				},
-				folly: '#EB004E',
+				folly: '#e3024d',
 				snow: '#F5F1F1'
 			}
 		}
