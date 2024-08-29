@@ -24,7 +24,12 @@
 <Hows />
 
 <div class="flex flex-col mx-auto items-center gap-y-8 mb-32">
-	<button on:click={handdleFoundKiwi} class="hover:scale-110">
+	<button
+		aria-label="Missing Kiwi"
+		title="Missing Kiwi"
+		on:click={handdleFoundKiwi}
+		class="hover:scale-110"
+	>
 		<svg
 			class:animate-spin-forwards={found_kiwi}
 			class:hover:animate-none={!found_kiwi}
