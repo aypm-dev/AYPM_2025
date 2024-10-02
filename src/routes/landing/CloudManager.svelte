@@ -2,8 +2,11 @@
 	import { onMount } from 'svelte';
 	import Cloud from '$lib/components/Cloud.svelte';
 
-	const initial_clouds = 3;
-	let cloud_container: HTMLDivElement;
+	const initial_clouds = 2;
+	const cloud_life_time = 10000;
+	const cloud_spawn_timer = 1100;
+
+	let cloud_container: HTMLElement;
 	let clouds: cloud[] = [];
 
 	interface cloud {
@@ -19,7 +22,7 @@
 
 		setInterval(() => {
 			addCloud();
-		}, 3000);
+		}, cloud_spawn_timer);
 	});
 
 	function getRandomNumberInRange(ranges: [number, number][]) {
@@ -33,30 +36,39 @@
 
 	function addCloud() {
 		const id = crypto.randomUUID();
-		const scale = Math.random() * (6 - 2) + 1;
+		const scale = getRandomNumberInRange([[0.5, 2.75]]);
 		const random_x = getRandomNumberInRange([
-			[12, 28],
-			[72, 88]
+			[10, 25],
+			[75, 95]
 		]);
-		const position = [random_x, getRandomNumberInRange([[10, 70]])];
+		const random_y = getRandomNumberInRange([
+			[5, 25],
+			[40, 45]
+		]);
 
-		clouds = [
-			...clouds,
-			{
-				id,
-				position,
-				scale
-			}
-		];
+		clouds.push({
+			id,
+			position: [random_x, random_y],
+			scale
+		});
+
+		clouds = clouds;
 
 		setTimeout(() => {
 			clouds = clouds.filter((cloud) => cloud.id != id);
-		}, 20000);
+		}, cloud_life_time);
 	}
 </script>
 
-<div bind:this={cloud_container} class="absolute flex w-screen h-[60rem] overflow-x-hidden">
+<section
+	bind:this={cloud_container}
+	class="absolute container -z-10 left-1/2 -translate-x-1/2 flex w-screen h-[60rem] overflow-x-hidden"
+>
+	<div
+		class="bg-gradient-to-r from-white via-transparent to-white absolute top-0 left-0 w-full h-full"
+	/>
+
 	{#each clouds as cloud (cloud.id)}
 		<Cloud position={cloud.position} scale={cloud.scale} />
 	{/each}
-</div>
+</section>
