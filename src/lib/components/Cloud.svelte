@@ -3,6 +3,7 @@
 
 	export let scale = 8;
 	export let position: number[] = [12, 40];
+	export let duration: number = 1000;
 
 	function load(node: HTMLElement) {
 		node.style.left = `${position[0]}%`;
@@ -14,7 +15,7 @@
 			{
 				left: end_position + '%'
 			},
-			{ delay: 200, duration: 20000, fill: 'forwards', easing: 'cubic-bezier(0, 0, 0.2, 1)' }
+			{ delay: 200, duration, fill: 'forwards', easing: 'cubic-bezier(0, 0, 0.2, 1)' }
 		);
 	}
 </script>

@@ -13,6 +13,7 @@
 		id: string;
 		position: number[];
 		scale: number;
+		duration: number;
 	}
 
 	onMount(() => {
@@ -49,7 +50,8 @@
 		clouds.push({
 			id,
 			position: [random_x, random_y],
-			scale
+			scale,
+			duration: cloud_life_time
 		});
 
 		clouds = clouds;
@@ -69,6 +71,6 @@
 	/>
 
 	{#each clouds as cloud (cloud.id)}
-		<Cloud position={cloud.position} scale={cloud.scale} />
+		<Cloud {...cloud} />
 	{/each}
 </section>
