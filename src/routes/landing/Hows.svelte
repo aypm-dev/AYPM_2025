@@ -40,8 +40,8 @@
 					It all started as 5 minute adventure to add more fields to my Curriculum. You know,
 					learning Python using a 3 minute tutorial from Youtube and immediately add Python expert
 					with "12 years of experience" to know languages. But I deeply feel in love with
-					programming after I learnt how to user it to connect with more communities, making mods
-					for my favorite games using the Lua programming language.
+					programming after I learnt how it helps you connect with more online communities! Mostly
+					by making mods for my favorite games using the Lua programming language.
 				</p>
 			</div>
 
