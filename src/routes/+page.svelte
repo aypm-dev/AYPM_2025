@@ -17,6 +17,11 @@
 
 <svelte:head>
 	<title>&#60AYPM /&#62 Frontend Developer Portfolio</title>
+
+	<meta
+		name="description"
+		content="Angel Paniagua Mora's Portfolio, a 20 year old Web Developer! Showcase of the projects I (AYPM) worked in and tecnologies I use daily. Inspired by what the limit of human creativity"
+	/>
 </svelte:head>
 
 <CloudManager />
