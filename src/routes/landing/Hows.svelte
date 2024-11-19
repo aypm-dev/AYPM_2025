@@ -11,9 +11,16 @@
 </script>
 
 <section
-	class="flex flex-col w-screen my-20 sm:my-32 p-12 items-center shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly overflow-x-hidden"
+	class="relative flex flex-col w-screen my-20 sm:my-32 p-12 items-center shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly overflow-x-hidden"
 >
-	<div class="container flex mx-auto justify-center">
+	<div
+		class="bg-gradient-to-r from-black/10 sm:from-black/25 to-transparent absolute top-0 h-full w-1/3 left-0"
+	/>
+	<div
+		class="bg-gradient-to-l from-black/10 sm:from-black/25 to-transparent absolute top-0 h-full w-1/3 left-2/3"
+	/>
+
+	<section class="container flex mx-auto justify-center">
 		<div class="w-full flex flex-col md:w-2/3 items-center">
 			<h1 class="text-6xl sm:text-7xl text-center">WHO'S AYPM?</h1>
 
@@ -27,11 +34,11 @@
 				below!
 			</p>
 		</div>
-	</div>
+	</section>
 
 	<UserReviewManager />
 
-	<div class="container flex mx-auto justify-center">
+	<section class="container flex mx-auto justify-center">
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:w-2/3 mt-24 gap-4 gap-y-12 sm:gap-y-32">
 			<div class="w-4/5 sm:w-full z-10">
 				<h1 class="-z-10 text-4xl sm:text-6xl text-center">HOW IT ALL STARTED?</h1>
@@ -96,5 +103,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </section>
