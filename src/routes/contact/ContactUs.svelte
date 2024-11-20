@@ -16,6 +16,10 @@
 	<div
 		class="relative w-80 sm:w-2/3 h-[40rem] sm:h-fit sm:min-h-[24rem] mt-12 px-6 py-8 sm:p-12 rounded-r-xl shadow-lg text-snow border-l-0 border-[3px] border-b-[6px] border-eerie-900 bg-folly ring-4 ring-white"
 	>
+		<div
+			class="bg-gradient-to-r from-black/10 sm:from-black/20 to-transparent absolute top-0 h-full w-1/3 left-0"
+		/>
+
 		<div class="sm:w-2/3 sm:max-w-[32rem] sm:ml-auto mr-48">
 			<h1 class="text-6xl sm:text-7xl text-center">CONTACT US?</h1>
 

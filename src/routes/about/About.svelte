@@ -7,6 +7,12 @@
 <div
 	class="relative w-screen mt-12 p-12 shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly"
 >
+	<div
+		class="bg-gradient-to-r from-black/10 sm:from-black/20 to-transparent absolute top-0 h-full w-1/3 left-0"
+	/>
+	<div
+		class="bg-gradient-to-l from-black/10 sm:from-black/20 to-transparent absolute top-0 h-full w-1/3 left-2/3"
+	/>
 	<div class="container flex mx-auto justify-center">
 		<div class="flex flex-col lg:w-2/3 md:w-4/5 w-full items-center">
 			<h1 class="text-6xl sm:text-7xl whitespace-nowrap text-center">ABOUT?</h1>

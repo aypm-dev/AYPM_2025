@@ -14,10 +14,10 @@
 	class="relative flex flex-col w-screen my-20 sm:my-32 p-12 items-center shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly overflow-x-hidden"
 >
 	<div
-		class="bg-gradient-to-r from-black/10 sm:from-black/25 to-transparent absolute top-0 h-full w-1/3 left-0"
+		class="bg-gradient-to-r from-black/10 sm:from-black/20 to-transparent absolute top-0 h-full w-1/3 left-0"
 	/>
 	<div
-		class="bg-gradient-to-l from-black/10 sm:from-black/25 to-transparent absolute top-0 h-full w-1/3 left-2/3"
+		class="bg-gradient-to-l from-black/10 sm:from-black/20 to-transparent absolute top-0 h-full w-1/3 left-2/3"
 	/>
 
 	<section class="container flex mx-auto justify-center">
