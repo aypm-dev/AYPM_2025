@@ -62,6 +62,7 @@
 			description: 'First official projects at my first official job... Quite the journey!',
 			grid_area: 'd',
 			modal: AyaCrm,
+			image_src: 'logo_netcom.svg',
 			technologies: [
 				'DIRECTUS-JS',
 				'GRAPHQL',
@@ -109,7 +110,7 @@
 	interface project {
 		title: string;
 		description: string;
-		modal?: typeof SvelteComponent<any> | typeof Innoceana;
+		modal: typeof SvelteComponent<any> | typeof Innoceana;
 		grid_area: string;
 		image_src?: string;
 		show_kiwi?: boolean;

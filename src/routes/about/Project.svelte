@@ -7,7 +7,7 @@
 	export let description: string;
 	export let modal: typeof SvelteComponent<any> | undefined;
 	export let grid_area: string;
-	export let image_src: string;
+	export let image_src: string = undefined;
 	export let show_kiwi = Math.random() > 0.5;
 	export let cover_image = false;
 	export let technologies: string[] = [];
@@ -39,7 +39,7 @@
 	</p>
 
 	{#if image_src && !cover_image}
-		<img src={image_src} alt="{title} logo" class="w-12 mt-8" />
+		<img src={image_src} alt="{title} logo" class="h-12 mt-8" />
 	{/if}
 
 	<ul class="flex gap-1 flex-wrap justify-center mt-auto pt-12">
