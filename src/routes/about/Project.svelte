@@ -9,6 +9,8 @@
 	export let grid_area: string;
 	export let image_src: string;
 	export let show_kiwi = Math.random() > 0.5;
+	export let cover_image = false;
+	export let technologies: string[] = [];
 
 	let project_modal: Modal;
 </script>
@@ -19,16 +21,34 @@
 
 <div
 	style="grid-area: {grid_area};"
-	class="relative flex flex-col h-full px-2 pt-4 pb-12 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg bg-folly"
+	class="relative flex flex-col z-0 h-full min-h-[16rem] px-2 pt-4 pb-12 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg bg-folly"
 >
+	{#if cover_image && image_src}
+		<div class="h-64 w-full">
+			<img
+				src={image_src}
+				alt="{title} logo"
+				class="absolute top-0 left-0 w-full object-cover h-64 rounded-t-xl"
+			/>
+		</div>
+	{/if}
+
 	<span class="text-2xl font-bold text-center"> {title.toUpperCase()} </span>
 	<p class="max-w-[48rem] mt-4 text-xl text-center">
 		{@html description}
 	</p>
 
-	{#if image_src}
+	{#if image_src && !cover_image}
 		<img src={image_src} alt="{title} logo" class="w-12 mt-8" />
 	{/if}
+
+	<ul class="flex gap-1 flex-wrap justify-center mt-auto pt-12">
+		{#each technologies as name}
+			<li class="rounded-full bg-white/10 text-white shadow p-1 px-2 text-center font-bold text-xs">
+				{name}
+			</li>
+		{/each}
+	</ul>
 
 	<div class="absolute top-full -translate-y-1/2">
 		<Button on:click={project_modal.openModal} type="secondary">
@@ -40,7 +60,7 @@
 
 	{#if show_kiwi}
 		<div
-			class="absolute hidden sm:block top-[calc(100%-1.5rem)] left-[calc(100%-1.5rem)] -translate-x-1/2 -translate-y-1/2 -scale-x-100"
+			class="absolute hidden sm:block top-[calc(100%-1.5rem)] -z-10 left-[calc(100%-1.5rem)] -translate-x-1/2 -translate-y-1/2 -scale-x-100"
 		>
 			<svg class="h-8 w-8" viewBox="0 0 512 512"
 				><path

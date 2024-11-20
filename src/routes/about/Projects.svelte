@@ -4,6 +4,8 @@
 	import Pipe from './Pipe.svelte';
 	import { fly } from 'svelte/transition';
 
+	import ClipHighlightMaker from './projects/ClipHighlightMaker.svelte';
+	import KiwisTwitch from './projects/KiwisTwitch.svelte';
 	import Innoceana from './projects/Innoceana.svelte';
 	import Portfolio from './projects/Portfolio.svelte';
 	import HCBS from './projects/HCBS.svelte';
@@ -11,34 +13,96 @@
 
 	const projects: project[] = [
 		{
+			title: 'CLIP HIGHLIGHT MAKER',
+			description:
+				'Can a custom video editor specialized in converting horizontal videos to vertical be better than ',
+			grid_area: 'a',
+			image_src: 'clip-highlight-maker.png',
+			cover_image: true,
+			modal: ClipHighlightMaker,
+			technologies: [
+				'FFMPEG',
+				'SVELTEKIT',
+				'NODEJS',
+				'SHADCN-SVELTE',
+				'PUPPETEER',
+				'TAILWINDCSS',
+				'LUCIDE'
+			]
+		},
+		{
+			title: "KIWI'S Twitch",
+			description:
+				'What if I make a light Third party Twitch Player? Instant load times, customization, stability ;)',
+			grid_area: 'b',
+			image_src: 'kiwis-twitch.png',
+			cover_image: true,
+			modal: KiwisTwitch,
+			technologies: [
+				'TWURPLE',
+				'TWITCH API',
+				'TWITCH OAUTH',
+				'SVELTEKIT',
+				'NODEJS',
+				'TAILWINDCSS',
+				'FONTAWESOME'
+			]
+		},
+		{
 			title: 'HCBS',
 			description:
 				'Leyends say heroes are courageous and compassionate, but what <i>if they become selfish</i> here? Let me talk about a little game about a this kiwi.',
-			grid_area: 'a',
+			grid_area: 'c',
 			image_src: 'hcbs.png',
-			modal: HCBS
+			modal: HCBS,
+			technologies: ['GODOT', 'ASEPRITE', 'ITCH.IO', 'HTML5']
+		},
+		{
+			title: 'NETCOM BASE CRM',
+			description: 'First official projects at my first official job... Quite the journey!',
+			grid_area: 'd',
+			modal: AyaCrm,
+			technologies: [
+				'DIRECTUS-JS',
+				'GRAPHQL',
+				'GRAPGQL-REQUEST',
+				'NODEJS',
+				'SVELTEKIT',
+				'FELTE FORMS',
+				'ZOD',
+				'MAILERSEND',
+				'TAILWINDCSS',
+				'FONTAWESOME'
+			]
 		},
 		{
 			title: 'INNOCEANA RESERVATION',
 			description:
 				'First webpage! I sure learned a lot..<br> Helping this organization to manage reservations!!',
-			grid_area: 'b',
-			image_src: 'innoceana-logo.png',
-			modal: Innoceana
+			grid_area: 'e',
+			image_src: 'innoceana.png',
+			cover_image: true,
+			modal: Innoceana,
+			technologies: [
+				'SQLITE',
+				'HONO',
+				'SVELTE',
+				'GOOGLE DRIVE API',
+				'FIREBASE AUTH',
+				'API.APITEMPLATE'
+			]
 		},
-		{
-			title: 'AYA CRM',
-			description: 'First official projects at my first official job... Quite the journey!',
-			grid_area: 'c',
-			modal: AyaCrm
-		},
+
 		{
 			title: 'PORTFOLIO',
 			description:
 				"You are looking at it.. Here's more details! Because there could be more portfolios in the future ;)",
-			grid_area: 'd',
+			grid_area: 'f',
 			show_kiwi: false,
-			modal: Portfolio
+			image_src: 'portfolio.png',
+			cover_image: true,
+			modal: Portfolio,
+			technologies: ['SVELTEKIT', 'NODEMAILER', 'VERCEL', 'NODEJS']
 		}
 	];
 
@@ -49,6 +113,8 @@
 		grid_area: string;
 		image_src?: string;
 		show_kiwi?: boolean;
+		cover_image?: boolean;
+		technologies?: string[];
 	}
 </script>
 
@@ -56,16 +122,16 @@
 	class="relative w-screen h-fit mt-24 mb-48 p-12 shadow-lg text-snow border-t-[3px] border-b-[6px] border-eerie-900 bg-folly"
 >
 	<div class="container flex mx-auto justify-center">
-		<div class="w-full flex flex-col md:w-2/3 items-center">
+		<div class="flex flex-col lg:w-2/3 md:w-4/5 w-full md: items-center">
 			<h1 class="text-6xl md:text-7xl whitespace-nowrap text-center">PROJECTS?</h1>
 
 			<p class="-mt-6 text-xl text-justify md:text-center">
-				We all love a good projects! You love them, I love them<br /><br />
+				We all love a good project! You love them, I love them<br /><br />
 				These are the projects that I'm most proud of that I've been working over the past few years.
 			</p>
 
 			<div
-				class="project-grid grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-3 min-h-[80rem] md:min-h-[64rem] mx-auto mt-12 md:gap-24 gap-12"
+				class="project-grid grid grid-cols-1 md:grid-cols-2 min-h-[80rem] md:min-h-[64rem] mx-auto mt-12 lg:gap-16 md:gap-10 gap-8"
 			>
 				{#each projects as project}
 					<Project {...project} />
@@ -126,9 +192,11 @@
 	@media (min-width: 768px) {
 		.project-grid {
 			grid-template-areas:
-				'a a'
-				'b d'
-				'c d';
+				'a b'
+				'a b'
+				'c c'
+				'd f'
+				'e f';
 		}
 	}
 
@@ -136,11 +204,13 @@
 		.project-grid {
 			grid-template-areas:
 				'a'
-				'a'
 				'b'
 				'c'
+				'c'
 				'd'
-				'd';
+				'e'
+				'f'
+				'f';
 		}
 	}
 </style>
