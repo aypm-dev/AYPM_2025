@@ -38,7 +38,7 @@
 			<h1
 				in:fade={{ delay: 1750, duration: 500 }}
 				style="clip-path: polygon(0 100%, 0 0, calc(32.8% - 0.25rem) 0, calc(32.8% - 0.25rem) 100%, calc(33.333333% + 0.25rem) 100%, calc(33.333333% + 0.25rem) 0, calc(66.66666% - 0.25rem) 0, calc(66.66666% - 0.25rem) 100%, calc(67.2% + 0.25rem) 100%, calc(67.2% + 0.25rem) 0, 99.5% 0, 99.5% 100%);"
-				class="group/aypm_letters absolute flex top-1/2 -translate-y-[75%] w-full h-44 z-[1] sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[1.85rem] hover:text-[1.5rem] sm:text-[2.95rem] sm:hover:text-[2.99rem] select-none font-bold"
+				class="group/aypm_letters absolute flex sm:top-1/2 top-[47.5%] -translate-y-[75%] w-full h-44 z-[1] sm:gap-x-1 hover:gap-x-[0.125rem] justify-center items-center text-[1.85rem] hover:text-[1.5rem] sm:text-[2.95rem] sm:hover:text-[2.99rem] select-none font-bold"
 			>
 				<span
 					role="complementary"
@@ -201,7 +201,7 @@
 
 			<section
 				in:enter={{ duration: 2000 }}
-				class="flex flex-col h-80 sm:h-96 mt-[12rem] p-1 sm:p-2 justify-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"
+				class="flex relative flex-col h-80 sm:h-96 mt-[12rem] p-1 sm:p-2 justify-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white"
 			>
 				<svg
 					in:enter={{ delay: 10, duration: 1900 }}
@@ -226,9 +226,19 @@
 
 			<section
 				in:enter={{ delay: 200, duration: 2000 }}
-				class="flex flex-col h-80 sm:h-96 mt-[6rem] p-2 gap-4 justify-end items-start text-xl sm:text-3xl rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white select-none"
+				class="flex relative flex-col h-80 sm:h-96 mt-[6rem] p-2 gap-4 justify-end items-start text-xl sm:text-3xl rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-white select-none"
 			>
 				KIWICOLA™
+
+				<svg
+					class="sm:w-8 sm:h-8 sm:hidden opacity-75 h-6 absolute top-2 left-2 text-xl sm:text-3xl"
+					viewBox="0 0 512 512"
+					><path
+						d="M166.624 289.645c-11.932 0-21.639 9.708-21.639 21.64s9.708 21.639 21.639 21.639c11.932 0 21.64-9.708 21.64-21.639 0-11.933-9.708-21.64-21.64-21.64zM346.952 289.645c-11.933 0-21.64 9.708-21.64 21.64s9.707 21.639 21.64 21.639 21.64-9.708 21.64-21.639c0-11.933-9.707-21.64-21.64-21.64z"
+					/><path
+						d="M437.006 74.979C388.656 26.628 324.37 0 255.992 0S123.329 26.628 74.979 74.979C26.629 123.329.001 187.615.001 255.993S26.629 388.656 74.98 437.007s112.635 74.979 181.013 74.979 132.663-26.628 181.014-74.979 74.979-112.636 74.979-181.014c-.001-68.379-26.629-132.664-74.98-181.014zM166.624 362.923c-28.474 0-51.639-23.165-51.639-51.639s23.165-51.64 51.639-51.64 51.64 23.166 51.64 51.64-23.166 51.639-51.64 51.639zm180.328 0c-28.475 0-51.64-23.165-51.64-51.639s23.165-51.64 51.64-51.64 51.64 23.166 51.64 51.64-23.165 51.639-51.64 51.639zm46.107-146.704a14.96 14.96 0 0 1-5.651 1.111c-5.92 0-11.528-3.527-13.897-9.348-20.104-49.382-66.311-81.29-117.716-81.29-51.406 0-97.611 31.908-117.715 81.29-3.123 7.673-11.875 11.362-19.549 8.237-7.673-3.124-11.361-11.875-8.237-19.548 24.726-60.735 81.838-99.979 145.501-99.979s120.775 39.244 145.501 99.979c3.123 7.672-.564 16.425-8.237 19.548z"
+					/></svg
+				>
 			</section>
 
 			<section
@@ -241,7 +251,7 @@
 					<div class="w-1/3 h-16 rounded-t-[48px] rounded-b-xl bg-eerie-900" />
 				</div>
 				<svg
-					class="sm:w-8 sm:h-8 w-6 opacity-75 h-6 absolute top-[calc(100%-0.5rem)] left-2 -translate-y-full text-xl sm:text-3xl"
+					class="sm:w-8 sm:h-8 sm:block hidden opacity-75 h-6 absolute top-[calc(100%-0.5rem)] left-2 -translate-y-full text-xl sm:text-3xl"
 					viewBox="0 0 512 512"
 					><path
 						d="M166.624 289.645c-11.932 0-21.639 9.708-21.639 21.64s9.708 21.639 21.639 21.639c11.932 0 21.64-9.708 21.64-21.639 0-11.933-9.708-21.64-21.64-21.64zM346.952 289.645c-11.933 0-21.64 9.708-21.64 21.64s9.707 21.639 21.64 21.639 21.64-9.708 21.64-21.639c0-11.933-9.707-21.64-21.64-21.64z"
@@ -249,9 +259,7 @@
 						d="M437.006 74.979C388.656 26.628 324.37 0 255.992 0S123.329 26.628 74.979 74.979C26.629 123.329.001 187.615.001 255.993S26.629 388.656 74.98 437.007s112.635 74.979 181.013 74.979 132.663-26.628 181.014-74.979 74.979-112.636 74.979-181.014c-.001-68.379-26.629-132.664-74.98-181.014zM166.624 362.923c-28.474 0-51.639-23.165-51.639-51.639s23.165-51.64 51.639-51.64 51.64 23.166 51.64 51.64-23.166 51.639-51.64 51.639zm180.328 0c-28.475 0-51.64-23.165-51.64-51.639s23.165-51.64 51.64-51.64 51.64 23.166 51.64 51.64-23.165 51.639-51.64 51.639zm46.107-146.704a14.96 14.96 0 0 1-5.651 1.111c-5.92 0-11.528-3.527-13.897-9.348-20.104-49.382-66.311-81.29-117.716-81.29-51.406 0-97.611 31.908-117.715 81.29-3.123 7.673-11.875 11.362-19.549 8.237-7.673-3.124-11.361-11.875-8.237-19.548 24.726-60.735 81.838-99.979 145.501-99.979s120.775 39.244 145.501 99.979c3.123 7.672-.564 16.425-8.237 19.548z"
 					/></svg
 				>
-				<span class="mt-auto opacity-75">
-					Frontend Developer<br />(Programming since 2019)
-				</span>
+				<span class="mt-auto opacity-75"> (Programming for <br />you since 2019) </span>
 			</section>
 		</div>
 
