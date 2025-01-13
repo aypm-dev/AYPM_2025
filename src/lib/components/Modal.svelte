@@ -56,14 +56,14 @@
 				</header>
 			{/if}
 
-			<div class="custom-scroll-bar w-full h-full p-2 sm:p4 overflow-y-auto">
+			<section class="custom-scroll-bar w-full h-full p-2 sm:p4 overflow-y-auto">
 				<slot>
 					<h1 class="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-300">Empty Modal</h1>
 					<p class="text-sm text-gray-700 dark:text-gray-400">
 						Overwrite this with the slot of the component.
 					</p>
 				</slot>
-			</div>
+			</section>
 
 			<footer class="flex absolute top-full w-full px-4 -translate-y-1/2">
 				<div class="flex ml-auto gap-4" out:leave|global={{ duration: 750, delay: 100 }}>
