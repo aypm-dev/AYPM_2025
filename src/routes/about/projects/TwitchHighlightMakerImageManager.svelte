@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 
-	let imageUrl = 'https://aypm.dev/sillycat.jpeg';
+	let imageUrl = 'https://aypm.dev/projects/assets/sillycat.jpeg';
 	let imageResolution = { width: 0, height: 0 };
 </script>
 

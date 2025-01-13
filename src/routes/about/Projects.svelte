@@ -163,7 +163,7 @@
 				class="absolute flex top-[3rem] -translate-y-1/2 left-[-4%] md:left-[18%] z-10 w-20 aspect-square p-2 justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"
 			>
 				<img
-					src="git-logo.png"
+					src="technologies/git-logo.png"
 					loading="lazy"
 					alt="Git Logo"
 					title="Git Logo"
@@ -176,7 +176,7 @@
 				class="absolute flex top-[calc(100%-4rem)] -translate-y-1/2 left-[21%] z-10 w-20 aspect-square justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"
 			>
 				<img
-					src="vscode-logo.png"
+					src="technologies/vscode-logo.png"
 					loading="lazy"
 					alt="Git Logo"
 					title="Visual Studio Code Logo"

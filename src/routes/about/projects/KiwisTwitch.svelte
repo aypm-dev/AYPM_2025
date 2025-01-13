@@ -69,7 +69,7 @@
 </section>
 
 <img
-	src="chat.webp"
+	src="projects/assets/chat.webp"
 	alt="How twitch chat looks in Kiwi's Twitch"
 	class="mt-12 mx-auto rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg"
 />

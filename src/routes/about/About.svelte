@@ -50,7 +50,7 @@
 				class="absolute flex top-0 -translate-y-1/2 left-[10%] z-10 w-16 aspect-square p-2 justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"
 			>
 				<img
-					src="insomnia-logo.png"
+					src="technologies/insomnia-logo.png"
 					loading="lazy"
 					alt="Insomnia Logo"
 					title="Insomnia Logo"
@@ -67,7 +67,7 @@
 				class="absolute flex top-full -translate-y-1/2 z-10 left-[calc(80%-1.25rem)] w-10 aspect-square justify-center items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 shadow-lg bg-folly"
 			>
 				<img
-					src="graphql-logo.png"
+					src="technologies/graphql-logo.png"
 					loading="lazy"
 					alt="GraphQL Logo"
 					title="GraphQL Logo"

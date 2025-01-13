@@ -74,7 +74,7 @@
 			<div class="flex w-[60%] aspect-square mx-auto my-auto justify-center items-center shrink-0">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)"
-					src="sqlite-logo.png"
+					src="technologies/sqlite-logo.png"
 					loading="lazy"
 					alt="SQLITE Logo"
 					draggable="false"
@@ -84,7 +84,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(90%)"
-					src="css-logo.png"
+					src="technologies/css-logo.png"
 					loading="lazy"
 					alt="CSS Logo"
 					draggable="false"
@@ -94,7 +94,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(90%)"
-					src="javascript-logo.png"
+					src="technologies/javascript-logo.png"
 					loading="lazy"
 					alt="JAVASCRIPT Logo"
 					draggable="false"
@@ -131,7 +131,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(80%)"
-					src="svelte-logo.png"
+					src="technologies/svelte-logo.png"
 					loading="lazy"
 					alt="SVELTE Logo"
 					draggable="false"
@@ -147,7 +147,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center shrink-0">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)"
-					src="graphql-logo-color.png"
+					src="technologies/graphql-logo-color.png"
 					loading="lazy"
 					alt="GRAPHQL Logo"
 					draggable="false"
@@ -157,7 +157,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center shrink-0">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)"
-					src="tailwind-logo.png"
+					src="technologies/tailwind-logo.png"
 					loading="lazy"
 					alt="TAILWIND Logo"
 					draggable="false"
@@ -167,7 +167,7 @@
 			<div class="flex w-2/3 aspect-square mx-auto my-auto justify-center items-center">
 				<img
 					style="filter: drop-shadow(0 0.35rem 0.2px black) saturate(110%)"
-					src="typescript-logo.png"
+					src="technologies/typescript-logo.png"
 					loading="lazy"
 					alt="TYPESCRIPT Logo"
 					draggable="false"

@@ -74,12 +74,12 @@
 
 <div class="flex sm:flex-row flex-col mx-auto gap-3 justify-center">
 	<img
-		src="/captions.webp"
+		src="projects/assets/captions.webp"
 		alt="Looka at Caption Manager"
 		class="sm:w-1/3 rounded-xl sm:rounded-r-none border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg my-4"
 	/>
 	<img
-		src="/zone.webp"
+		src="projects/assets/zone.webp"
 		alt="Looka at Caption Manager"
 		class="sm:w-1/3 rounded-xl sm:rounded-l-none border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg my-4"
 	/>
