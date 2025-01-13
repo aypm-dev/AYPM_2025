@@ -1,16 +1,19 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
 	import Modal from '$lib/components/Modal.svelte';
+	import type { Project } from '$lib/types/project';
 	import type { SvelteComponent } from 'svelte';
 
 	export let title: string;
+	export let subtitle: Project['subtitle'] = '';
 	export let description: string;
 	export let modal: typeof SvelteComponent<any> | undefined;
 	export let grid_area: string;
-	export let image_src: string = undefined;
+	export let image_src: Project['image_src'] = '';
 	export let show_kiwi = Math.random() > 0.5;
 	export let cover_image = false;
 	export let technologies: string[] = [];
+	export let short: Project['short'] = false;
 
 	let project_modal: Modal;
 </script>
@@ -19,38 +22,48 @@
 	<svelte:component this={modal} />
 </Modal>
 
-<div
+<article
 	style="grid-area: {grid_area};"
-	class="relative flex flex-col z-0 h-full min-h-[16rem] px-2 pt-4 pb-12 items-center rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg bg-folly"
+	class:h-[26rem]={short}
+	class:min-h-[16rem]={!short}
+	class="relative z-0 h-full rounded-xl border-[3px] border-b-[6px] border-eerie-900 ring-2 ring-white shadow-lg bg-folly"
 >
 	{#if cover_image && image_src}
-		<div class="h-64 w-full">
-			<img
-				src={image_src}
-				alt="{title} logo"
-				class="absolute top-0 left-0 w-full object-cover h-64 rounded-t-xl"
-			/>
-		</div>
+		<img
+			class:h-48={short}
+			class:h-64={!short}
+			src={image_src}
+			alt="{title} logo"
+			class="w-full object-cover rounded-t-xl"
+		/>
 	{/if}
 
-	<span class="text-2xl font-bold text-center"> {title.toUpperCase()} </span>
-	<p class="max-w-[48rem] mt-4 text-xl text-center">
-		{@html description}
-	</p>
+	<section class="px-2 flex flex-col items-center pt-4 pb-12">
+		<h1 class="text-2xl font-bold text-center">{title.toUpperCase()}</h1>
+		{#if subtitle}
+			<h2 class="text-lg font-bold -mt-2 opacity-50 text-center capitalize">{subtitle}</h2>
+		{/if}
 
-	{#if image_src && !cover_image}
-		<img src={image_src} alt="{title} logo" class="h-12 mt-8" />
-	{/if}
+		<p class="max-w-[48rem] mt-4 text-xl text-center">
+			{@html description}
+		</p>
 
-	<ul class="flex gap-1 flex-wrap justify-center mt-auto pt-12">
-		{#each technologies as name}
-			<li class="rounded-full bg-white/10 text-white shadow p-1 px-2 text-center font-bold text-xs">
-				{name}
-			</li>
-		{/each}
-	</ul>
+		{#if image_src && !cover_image}
+			<img src={image_src} alt="{title} logo" class="h-12 mt-8" />
+		{/if}
 
-	<div class="absolute top-full -translate-y-1/2">
+		<ul class:pt-8={short} class:pt-12={!short} class="flex gap-1 flex-wrap justify-center mt-auto">
+			{#each technologies as name}
+				<li
+					class="rounded-full bg-white/10 text-white shadow p-1 px-2 text-center font-bold text-xs"
+				>
+					{name}
+				</li>
+			{/each}
+		</ul>
+	</section>
+
+	<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 whitespace-nowrap">
 		<Button on:click={project_modal.openModal} type="secondary">
 			<span class="text-folly">&#60</span>
 			Button <span class="opacity-50">on:click=&#123;open&#125;</span>
@@ -60,7 +73,7 @@
 
 	{#if show_kiwi}
 		<div
-			class="absolute hidden sm:block top-[calc(100%-1.5rem)] -z-10 left-[calc(100%-1.5rem)] -translate-x-1/2 -translate-y-1/2 -scale-x-100"
+			class="absolute hidden sm:block -bottom-2 -z-10 left-[calc(100%-1.5rem)] -translate-x-1/2 -translate-y-1/2 -scale-x-100"
 		>
 			<svg class="h-8 w-8" viewBox="0 0 512 512"
 				><path
@@ -70,4 +83,4 @@
 			>
 		</div>
 	{/if}
-</div>
+</article>
