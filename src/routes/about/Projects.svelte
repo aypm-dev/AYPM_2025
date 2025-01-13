@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { SvelteComponent } from 'svelte';
 	import Project from './Project.svelte';
 	import Pipe from './Pipe.svelte';
 	import { fly } from 'svelte/transition';
@@ -10,14 +9,34 @@
 	import Portfolio from './projects/Portfolio.svelte';
 	import HCBS from './projects/HCBS.svelte';
 	import AyaCrm from './projects/AyaCrm.svelte';
+	import type { Project as ProjectType } from '$lib/types/project';
 
-	const projects: project[] = [
+	const projects: ProjectType[] = [
+		{
+			title: 'SillyCats',
+			subtitle: 'A Twitter Clone Cats',
+			description: 'A fast and minimalist social media for being a goof!',
+			grid_area: 'z',
+			image_src: 'projects/silly-cats.png',
+			cover_image: true,
+			modal: ClipHighlightMaker,
+			short: true,
+			technologies: [
+				'ANGULAR 18',
+				'ANALOG',
+				'POCKETBASE',
+				'NODEJS',
+				'PRIMENG',
+				'TAILWINDCSS',
+				'LUCIDE'
+			]
+		},
 		{
 			title: 'CLIP HIGHLIGHT MAKER',
 			description:
 				'Can a custom video editor specialized in converting horizontal videos to vertical be better than ',
 			grid_area: 'a',
-			image_src: 'clip-highlight-maker.png',
+			image_src: 'projects/clip-highlight-maker.png',
 			cover_image: true,
 			modal: ClipHighlightMaker,
 			technologies: [
@@ -33,9 +52,9 @@
 		{
 			title: "KIWI'S Twitch",
 			description:
-				'What if I make a light Third party Twitch Player? Instant load times, customization, stability ;)',
+				'What if I make a light Third party Twitch Player? Instant load times, customization, stability and much more ;)',
 			grid_area: 'b',
-			image_src: 'kiwis-twitch.png',
+			image_src: 'projects/kiwis-twitch.png',
 			cover_image: true,
 			modal: KiwisTwitch,
 			technologies: [
@@ -49,11 +68,12 @@
 			]
 		},
 		{
-			title: 'HCBS',
+			title: 'Heroes can be selfish',
+			subtitle: 'Where heroes might take advantage of their status',
 			description:
 				'Leyends say heroes are courageous and compassionate, but what <i>if they become selfish</i> here? Let me talk about a little game about a this kiwi.',
 			grid_area: 'c',
-			image_src: 'hcbs.png',
+			image_src: 'projects/hcbs.png',
 			modal: HCBS,
 			technologies: ['GODOT', 'ASEPRITE', 'ITCH.IO', 'HTML5']
 		},
@@ -62,7 +82,7 @@
 			description: 'First official projects at my first official job... Quite the journey!',
 			grid_area: 'd',
 			modal: AyaCrm,
-			image_src: 'logo_netcom.svg',
+			image_src: 'projects/logo_netcom.svg',
 			technologies: [
 				'DIRECTUS-JS',
 				'GRAPHQL',
@@ -81,7 +101,7 @@
 			description:
 				'First webpage! I sure learned a lot..<br> Helping this organization to manage reservations!!',
 			grid_area: 'e',
-			image_src: 'innoceana.png',
+			image_src: 'projects/innoceana.png',
 			cover_image: true,
 			modal: Innoceana,
 			technologies: [
@@ -100,23 +120,12 @@
 				"You are looking at it.. Here's more details! Because there could be more portfolios in the future ;)",
 			grid_area: 'f',
 			show_kiwi: false,
-			image_src: 'portfolio.png',
+			image_src: 'projects/portfolio.png',
 			cover_image: true,
 			modal: Portfolio,
 			technologies: ['SVELTEKIT', 'NODEMAILER', 'VERCEL', 'NODEJS']
 		}
 	];
-
-	interface project {
-		title: string;
-		description: string;
-		modal: typeof SvelteComponent<any> | typeof Innoceana;
-		grid_area: string;
-		image_src?: string;
-		show_kiwi?: boolean;
-		cover_image?: boolean;
-		technologies?: string[];
-	}
 </script>
 
 <div
@@ -200,6 +209,7 @@
 	@media (min-width: 768px) {
 		.project-grid {
 			grid-template-areas:
+				'z z'
 				'a b'
 				'a b'
 				'c c'
@@ -211,6 +221,7 @@
 	@media (max-width: 768px) {
 		.project-grid {
 			grid-template-areas:
+				'z z'
 				'a'
 				'b'
 				'c'
