@@ -10,6 +10,7 @@
 	import HCBS from './projects/HCBS.svelte';
 	import AyaCrm from './projects/AyaCrm.svelte';
 	import type { Project as ProjectType } from '$lib/types/project';
+	import SillyCats from './projects/SillyCats.svelte';
 
 	const projects: ProjectType[] = [
 		{
@@ -19,7 +20,7 @@
 			grid_area: 'z',
 			image_src: 'projects/silly-cats.png',
 			cover_image: true,
-			modal: ClipHighlightMaker,
+			modal: SillyCats,
 			short: true,
 			technologies: [
 				'ANGULAR 18',
