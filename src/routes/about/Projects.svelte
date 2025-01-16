@@ -15,7 +15,7 @@
 	const projects: ProjectType[] = [
 		{
 			title: 'SillyCats',
-			subtitle: 'A Twitter Clone Cats',
+			subtitle: 'A Twitter Clone With Silly Cats',
 			description: 'A fast and minimalist social media for being a goof!',
 			grid_area: 'z',
 			image_src: 'projects/silly-cats.png',

@@ -26,12 +26,11 @@
 </div>
 
 <p class="sm:w-2/3 mx-auto mt-12 text-xl text-justify">
-	CRM App Base was called. And its job did! As of today, the base template was used in four
-	projects, and hopefully even more in the future! One of these projects served as a showcase for a
-	bank's upcoming card delivery system, set to cover the entire country. This really put the
-	capabilities of the project to the test due to the short deadline of only 2 WEEKS!! (Lots of extra
-	hours...) The project was later developed and put together into the final version in another 3-4
-	weeks.
+	"CRM App Base", and its job did! As of today, the base template was used in four projects, and
+	hopefully even more in the future! One of these projects served as a showcase for a bank's
+	upcoming card delivery system, set to cover the entire country. This really put the capabilities
+	of the project to the test due to the short deadline of only 2 WEEKS!! (Lots of extra hours...)
+	The project was later developed and put together into the final version in another 3-4 weeks.
 </p>
 
 <p class="sm:w-2/3 mx-auto mt-12 mb-24 text-xl text-justify">
