@@ -222,7 +222,7 @@
 	@media (max-width: 768px) {
 		.project-grid {
 			grid-template-areas:
-				'z z'
+				'z'
 				'a'
 				'b'
 				'c'
